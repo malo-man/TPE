@@ -77,7 +77,7 @@ $("#next").on("click", (e) => {
         img();
     }
 });
-
+/*
 function prec() {
 
 }
@@ -85,8 +85,8 @@ function prec() {
 function suiv() {
 
 }
-
-var diapo = true;
+*/
+//var diapo = true;
 
 /*function dispDiapo() {
     RemoveElement("toggleDiapo");
@@ -119,7 +119,14 @@ img();
 //ClickEvent("prev", prec);
 //ClickEvent("next", suiv);
 
-function presentation() {
+$("nav li").on("click", function(e) {
+    //alert($(this).attr("id"));
+    $("#content").html("");
+    $("#content").load($(this).attr("id") + ".html");
+});
+
+
+/*function presentation() {
     $("#content").html("");
     $("#content").load("presentation.html");
 }
@@ -139,8 +146,8 @@ function app() {
     $("#content").load("app.html");
 }
 
-ClickEvent("presentation", presentation);
-ClickEvent("experimentation", exp);
-ClickEvent("biblio", biblio);
-ClickEvent("app", app);
+//ClickEvent("presentation", presentation);
+//ClickEvent("experimentation", exp);
+//ClickEvent("biblio", biblio);
+//ClickEvent("app", app);*/
 presentation();
