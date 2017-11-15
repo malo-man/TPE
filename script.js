@@ -125,6 +125,8 @@ $("nav li").on("click", function(e) {
     $("#content").load($(this).attr("id") + ".html");
 });
 
+$("#presentation").trigger("click");
+
 
 /*function presentation() {
     $("#content").html("");

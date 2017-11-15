@@ -82,18 +82,13 @@ div {
 #diapo {
     margin: 0 auto;
     width: 50%;
-    background: white;
     position: relative;
 }
 
 .button {
     display: inline-block;
-    font-family: sans-serif;
     font-size: 50px;
     cursor: pointer;
-    color: black;
-    text-align: center;
-    border-radius: 100%;
     transform: scale(1);
     transition: 0.5s;
 }
@@ -125,6 +120,8 @@ div {
 section {
     padding: 1px 20px;
     background: linear-gradient(135deg, rgb(200, 200, 200), white);
+    width: 100%;
+    clear: both;
 }
 
 section h2 {
