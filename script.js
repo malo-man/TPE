@@ -1,6 +1,7 @@
 var loc = window.location;
 var doc = document;
 var c = "click";
+const LACONSTANTEAVECLENOMLEPLUSLONGDUMONDEETQUISERTARIEN = undefined;
 
 function link(floc) {
     window.location = floc;
@@ -52,28 +53,33 @@ var Nimage = 1;
 var iMax = 4;
 
 function img() {
-    doc.getElementById("image").setAttribute("src", "img/img" + Nimage + ".JPG");
-    RemoveElement("c");
-    AddElement("p", "c", "Image n°" + Nimage + " sur " + iMax, "count");
+    $("#image").attr("src", "img/img" + Nimage + ".JPG");
+    $("#c").html("Image n°" + Nimage + " sur " + iMax, "count")
 }
 
 function prec() {
-    if (Nimage != 1) {
-        Nimage = Nimage - 1;
+    if (Nimage == 1) {
+        Nimage = iMax + 1;
+    }
+    if (Nimage > 1) {
+        Nimage -= 1;
         img();
     }
 }
 
 function suiv() {
-    if (Nimage != iMax) {
-        Nimage = Nimage + 1;
+    if (Nimage == iMax) {
+        Nimage = 0;
+    }
+    if (Nimage < iMax) {
+        Nimage += 1;
         img();
     }
 }
 
 var diapo = true;
 
-function dispDiapo() {
+/*function dispDiapo() {
     RemoveElement("toggleDiapo");
     if (diapo) {
         SetDisp("prev", "inline-block");
@@ -91,7 +97,7 @@ function dispDiapo() {
     //SetAttribute("toggleDiapo", "class", "button");
     ClickEvent("toggleDiapo", dispDiapo);
     diapo = !diapo;
-}
+}*/
 
 $("#toggleDiapo").on("click", (e) => {
     $("#diapo").slideToggle();
