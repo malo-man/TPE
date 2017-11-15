@@ -57,7 +57,8 @@ function img() {
     $("#c").html("Image n°" + Nimage + " sur " + iMax, "count")
 }
 
-function prec() {
+
+$("#prev").on("click", (e) => {
     if (Nimage == 1) {
         Nimage = iMax + 1;
     }
@@ -65,9 +66,9 @@ function prec() {
         Nimage -= 1;
         img();
     }
-}
+});
 
-function suiv() {
+$("#next").on("click", (e) => {
     if (Nimage == iMax) {
         Nimage = 0;
     }
@@ -75,6 +76,14 @@ function suiv() {
         Nimage += 1;
         img();
     }
+});
+
+function prec() {
+
+}
+
+function suiv() {
+
 }
 
 var diapo = true;
@@ -107,8 +116,8 @@ $("#toggleDiapo").on("click", (e) => {
 img();
 
 //ClickEvent("toggleDiapo", dispDiapo);
-ClickEvent("prev", prec);
-ClickEvent("next", suiv);
+//ClickEvent("prev", prec);
+//ClickEvent("next", suiv);
 
 function presentation() {
     $("#content").html("");
