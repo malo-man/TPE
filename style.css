@@ -80,8 +80,7 @@ div {
 }
 
 #diapo {
-    margin: 0 auto;
-    width: 50%;
+    width: 100%;
     position: relative;
 }
 
@@ -104,7 +103,7 @@ div {
     height: 8%;
     color: black;
     position: relative;
-    padding: 5%;
+    padding: 1%;
 }
 
 #prev:hover,
@@ -114,7 +113,7 @@ div {
 
 #image {
     display: inline-block;
-    width: 40%;
+    width: 20%;
 }
 
 section {
