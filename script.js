@@ -18,19 +18,19 @@ function AddElement(type, Id, txt, Id2) {
 }
 
 function SetDisp(Id, val) {
-	document.getElementById(Id).style.display = val;
+    document.getElementById(Id).style.display = val;
 }
 
 function GetDisp(Id) {
-	return document.getElementById(Id).style.display;
+    return document.getElementById(Id).style.display;
 }
 
 function SetAttribute(Id, attribute, val) {
-	doc.getElementById(Id).setAttribute(attribute, val);
+    doc.getElementById(Id).setAttribute(attribute, val);
 }
 
 function GetAttribute(Id, attribute) {
-	return doc.getElementById(Id).getAttribute(attribute);
+    return doc.getElementById(Id).getAttribute(attribute);
 }
 
 function AddImg(Id, l, Id2) {
@@ -52,21 +52,21 @@ var Nimage = 1;
 var iMax = 4;
 
 function img() {
-    doc.getElementById("image").setAttribute("src", "img/img"+Nimage+".JPG");
-	RemoveElement("c");
-	AddElement("p", "c", "Image n°"+Nimage+" sur "+iMax, "count");
+    doc.getElementById("image").setAttribute("src", "img/img" + Nimage + ".JPG");
+    RemoveElement("c");
+    AddElement("p", "c", "Image n°" + Nimage + " sur " + iMax, "count");
 }
 
 function prec() {
     if (Nimage != 1) {
-        Nimage = Nimage-1;
+        Nimage = Nimage - 1;
         img();
     }
 }
 
 function suiv() {
     if (Nimage != iMax) {
-        Nimage = Nimage+1;
+        Nimage = Nimage + 1;
         img();
     }
 }
@@ -74,47 +74,54 @@ function suiv() {
 var diapo = true;
 
 function dispDiapo() {
-	RemoveElement("dispD");
-	if (diapo) {
-		SetDisp("prev", "inline-block");
-		SetDisp("next", "inline-block");
-		SetDisp("image", "inline-block");
-		AddElement("div", "dispD", "Cacher diapo", "count");
-		img();
-	} else {
-		SetDisp("prev", "none");
-		SetDisp("next", "none");
-		SetDisp("image", "none");
-		SetDisp("c", "none");
-		AddElement("div", "dispD", "Afficher diapo", "count");
-	}
-	SetAttribute("dispD", "class", "button");
-	ClickEvent("dispD", dispDiapo);
-	diapo = !diapo;
+    RemoveElement("toggleDiapo");
+    if (diapo) {
+        SetDisp("prev", "inline-block");
+        SetDisp("next", "inline-block");
+        SetDisp("image", "inline-block");
+        AddElement("div", "toggleDiapo", "Cacher diapo", "count");
+        img();
+    } else {
+        SetDisp("prev", "none");
+        SetDisp("next", "none");
+        SetDisp("image", "none");
+        SetDisp("c", "none");
+        AddElement("div", "toggleDiapo", "Afficher diapo", "count");
+    }
+    //SetAttribute("toggleDiapo", "class", "button");
+    ClickEvent("toggleDiapo", dispDiapo);
+    diapo = !diapo;
 }
 
-dispDiapo();
+$("#toggleDiapo").on("click", (e) => {
+    $("#diapo").slideToggle();
+});
+
+//dispDiapo();
 img();
 
-ClickEvent("dispD", dispDiapo);
+//ClickEvent("toggleDiapo", dispDiapo);
 ClickEvent("prev", prec);
 ClickEvent("next", suiv);
 
 function presentation() {
-	$("#content").html("");
-	$("#content").load("presentation.html");
+    $("#content").html("");
+    $("#content").load("presentation.html");
 }
+
 function exp() {
-	$("#content").html("");
-	$("#content").load("exp.html");
+    $("#content").html("");
+    $("#content").load("exp.html");
 }
+
 function biblio() {
-	$("#content").html("");
-	$("#content").load("biblio.html");
+    $("#content").html("");
+    $("#content").load("biblio.html");
 }
+
 function app() {
-	$("#content").html("");
-	$("#content").load("app.html");
+    $("#content").html("");
+    $("#content").load("app.html");
 }
 
 ClickEvent("presentation", presentation);
