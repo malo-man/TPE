@@ -110,6 +110,7 @@ function suiv() {
 
 $("#toggleDiapo").on("click", (e) => {
     $("#diapo").slideToggle();
+    $("#c").slideToggle();
 });
 
 //dispDiapo();
@@ -152,4 +153,4 @@ function app() {
 //ClickEvent("experimentation", exp);
 //ClickEvent("biblio", biblio);
 //ClickEvent("app", app);*/
-presentation();
+//presentation();
