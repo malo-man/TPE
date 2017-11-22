@@ -53,7 +53,7 @@ var Nimage = 1;
 var iMax = 4;
 
 function img() {
-    $("#image").attr("src", "img/img" + Nimage + ".JPG");
+    $("#image").attr("src", "img" + Nimage + ".JPG");
     $("#c").html("Image n°" + Nimage + " sur " + iMax, "count")
 }
 
