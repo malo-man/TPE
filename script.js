@@ -122,8 +122,11 @@ img();
 
 $("nav li").on("click", function(e) {
     //alert($(this).attr("id"));
-    $("#content").html("");
-    $("#content").load($(this).attr("id") + ".html");
+
+    if ($(this).attr("id") != undefined) {
+        $("#content").html("");
+        $("#content").load($(this).attr("id") + ".html");
+    }
 });
 
 $("#presentation").trigger("click");
