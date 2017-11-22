@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background: url("bg1.jpg");
 }
 
 header {
@@ -183,7 +184,6 @@ div {
 
 section {
     padding: 1px 20px;
-    background: linear-gradient(135deg, rgb(200, 200, 200), white);
     width: 100%;
     clear: both;
 }
