@@ -104,8 +104,10 @@ div {
     width: 8%;
     height: 8%;
     color: black;
-	position: relative;
+    position: relative;
     padding: 1%;
+    margin-left:20px;
+    margin-right:20px;
 }
 
 #prev:hover,
