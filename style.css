@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: url("bg1.jpg");
 }
 
 header {
@@ -21,8 +20,7 @@ h1 {
     background: inherit !important;
 }
 
-
-/*#nav {
+#nav {
     padding: 0;
 }
 
@@ -32,7 +30,7 @@ h1 {
     padding: 0;
 }
 
-#nav>ul>li>span {
+#nav li {
     display: inline-block;
     width: 25%;
     float: left;
@@ -46,77 +44,13 @@ h1 {
     transition: .2s;
 }
 
-#nav>ul>li>span:hover {
+#nav li:hover {
     background: rgba(100, 100, 100, .7);
 }
 
-#nav ul li ul {
-    background: red;
-    float: left;
-}*/
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-    cursor: pointer;
-    font-family: sans-serif;
-}
-
-nav>ul>li {
-    float: left;
-    margin: auto;
-    padding: 0;
-    background-color: black;
-    color: white;
-    width: 25%;
-    border-bottom: 2px solid black;
-}
-
-nav>ul>li:hover {
-    border-bottom: 2px solid blue;
-}
-
-nav ul ul {
-    background-color: black;
-    color: white;
-    width: 25%;
-    text-align: center;
-}
-
-nav li span {
-    display: block;
-    width: 100%;
+#nav li a {
     color: white;
     text-decoration: none;
-    padding: 5px;
-}
-
-nav li span {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li ul {
-    display: none;
-    position: absolute;
-}
-
-nav ul li:hover ul {
-    display: block;
-}
-
-nav ul li {
-    transition: .5s;
-}
-
-nav ul li:hover {
-    background: rgba(100, 100, 255, 1) !important;
-}
-
-nav li:hover ul li {
-    float: none;
 }
 
 div {
@@ -138,15 +72,17 @@ div {
 }
 
 #toggleDiapo:hover {
-    background: rgb(50, 0, 200);
+    background: rgb(30, 0, 160);
 }
 
 #count {
     text-align: center;
+	position:relative;
 }
 
 #diapo {
     width: 100%;
+	height:25%;
     position: relative;
 }
 
@@ -168,7 +104,7 @@ div {
     width: 8%;
     height: 8%;
     color: black;
-    position: relative;
+	position: relative;
     padding: 1%;
 }
 
@@ -184,6 +120,7 @@ div {
 
 section {
     padding: 1px 20px;
+    background: linear-gradient(135deg, rgb(200, 200, 200), white);
     width: 100%;
     clear: both;
 }
