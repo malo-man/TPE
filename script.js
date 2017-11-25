@@ -1,3 +1,5 @@
+/// <reference path="jquery.d.ts" />
+
 var loc = window.location;
 var doc = document;
 var c = "click";
@@ -133,6 +135,9 @@ $("nav a").on("click", function(e) {
 
 $("a[href='presentation.html']").trigger("click");
 
+$("#nav>ul>li").hover(function(e) {
+    $(this).children("ul").slideToggle(100);
+})
 
 /*function presentation() {
     $("#content").html("");

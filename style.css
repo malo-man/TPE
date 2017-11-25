@@ -65,9 +65,10 @@ h3 {
     width: 25%;
 }
 
-#nav>ul>li:hover ul {
+
+/*#nav>ul>li:hover ul {
     display: block;
-}
+}*/
 
 #nav li a {
     color: white;
@@ -89,12 +90,16 @@ div {
     color: white;
     display: inline-block;
     border-radius: 5px;
+    transform: scale(1);
     cursor: pointer;
+    margin-top: -10px;
     transition: .2s;
 }
 
 #toggleDiapo:hover {
     background: rgb(30, 0, 160);
+    transform: scale(1.1);
+    /*Ceci est très moche*/
 }
 
 #count {
@@ -121,17 +126,15 @@ div {
 .button:hover {
     color: white;
     border-color: transparent;
+    transform: scale(1.1);
 }
 
 #prev,
 #next {
-    width: 8%;
-    height: 8%;
     color: black;
-    position: relative;
     padding: 1%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 #prev:hover,
