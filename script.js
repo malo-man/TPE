@@ -112,7 +112,7 @@ function suiv() {
 
 $("#toggleDiapo").on("click", e => {
     $("#diapo, #c").slideToggle();
-    $("#next,#prev").toggle();
+    $("#next,#prev").fadeToggle(100);
 });
 
 //dispDiapo();
