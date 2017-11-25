@@ -63,6 +63,7 @@ h3 {
     z-index: 500;
     background: darkblue;
     width: 25%;
+    box-shadow: 5px 5px 10px black;
 }
 
 
@@ -92,14 +93,12 @@ div {
     border-radius: 5px;
     transform: scale(1);
     cursor: pointer;
-    margin-top: -10px;
     transition: .2s;
 }
 
 #toggleDiapo:hover {
     background: rgb(30, 0, 160);
     transform: scale(1.1);
-    /*Ceci est très moche*/
 }
 
 #count {
@@ -145,6 +144,7 @@ div {
 #image {
     display: inline-block;
     width: 90%;
+    box-shadow: 5px 5px 10px black;
 }
 
 section {

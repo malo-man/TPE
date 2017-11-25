@@ -139,28 +139,7 @@ $("#nav>ul>li").hover(function(e) {
     $(this).children("ul").slideToggle(100);
 })
 
-/*function presentation() {
-    $("#content").html("");
-    $("#content").load("presentation.html");
-}
 
-function exp() {
-    $("#content").html("");
-    $("#content").load("exp.html");
-}
-
-function biblio() {
-    $("#content").html("");
-    $("#content").load("biblio.html");
-}
-
-function app() {
-    $("#content").html("");
-    $("#content").load("app.html");
-}
-
-//ClickEvent("presentation", presentation);
-//ClickEvent("experimentation", exp);
-//ClickEvent("biblio", biblio);
-//ClickEvent("app", app);*/
-//presentation();
+var interval = setInterval(() => {
+    $("#next").trigger("click");
+}, 4000);
