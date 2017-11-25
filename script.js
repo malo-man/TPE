@@ -53,7 +53,7 @@ var Nimage = 1;
 var iMax = 4;
 
 function img() {
-    $("#image").attr("src", "img" + Nimage + ".JPG");
+    $("#image").attr("src", "img/img" + Nimage + ".JPG");
     $("#c").html("Image n°" + Nimage + " sur " + iMax, "count")
 }
 
@@ -109,6 +109,8 @@ function suiv() {
 }*/
 
 $("#toggleDiapo").on("click", (e) => {
+	$("#prev").slideToggle();
+	$("#next").slideToggle();
     $("#diapo").slideToggle();
     $("#c").slideToggle();
 });
@@ -122,11 +124,8 @@ img();
 
 $("nav li").on("click", function(e) {
     //alert($(this).attr("id"));
-
-    if ($(this).attr("id") != undefined) {
-        $("#content").html("");
-        $("#content").load($(this).attr("id") + ".html");
-    }
+    $("#content").html("");
+    $("#content").load($(this).attr("id") + ".html");
 });
 
 $("#presentation").trigger("click");
