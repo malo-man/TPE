@@ -122,8 +122,13 @@ img();
 
 $("nav a").on("click", function(e) {
     e.preventDefault();
-    $("#content").html("");
-    $("#content").load($(this).attr("href"));
+    if ($(this).attr("href") != undefined) {
+        $("#content").fadeOut(100, () => {
+            $("#content").load($(this).attr("href"), () => {
+                $("#content").fadeIn();
+            });
+        });
+    }
 });
 
 $("a[href='presentation.html']").trigger("click");
