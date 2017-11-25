@@ -162,6 +162,16 @@ section p {
 footer {
     font-family: sans-serif;
     padding: 10px;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    text-align: center;
+}
+
+hr:after {
+    content: "\273D \273D \273D";
 }
 
 #pb {
