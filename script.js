@@ -120,13 +120,13 @@ img();
 //ClickEvent("prev", prec);
 //ClickEvent("next", suiv);
 
-$("nav li").on("click", function(e) {
-    //alert($(this).attr("id"));
+$("nav a").on("click", function(e) {
+    e.preventDefault();
     $("#content").html("");
-    $("#content").load($(this).attr("id") + ".html");
+    $("#content").load($(this).attr("href") + ".html");
 });
 
-$("#presentation").trigger("click");
+$("a[href='presentation.html']").trigger("click");
 
 
 /*function presentation() {

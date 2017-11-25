@@ -16,6 +16,10 @@ h1 {
     vertical-align: middle;
 }
 
+h3 {
+    font-family: sans-serif;
+}
+
 ::selection {
     color: inherit !important;
     background: inherit !important;
@@ -31,22 +35,39 @@ h1 {
     padding: 0;
 }
 
-#nav li {
+#nav>ul>li {
     display: inline-block;
     width: 25%;
     float: left;
     text-align: center;
     margin: 0px;
-    padding: 5px 0px;
     font-family: sans-serif;
-    background: black;
+    background: darkblue;
     color: white;
     cursor: pointer;
     transition: .2s;
 }
 
-#nav li:hover {
+#nav>ul>li>a {
+    display: block;
+    padding: 5px 0px;
+}
+
+#nav>ul>li:hover>a,
+#nav ul li ul li:hover {
     background: rgba(100, 100, 100, .7);
+}
+
+#nav>ul>li ul {
+    display: none;
+    position: absolute;
+    z-index: 500;
+    background: darkblue;
+    width: 25%;
+}
+
+#nav>ul>li:hover ul {
+    display: block;
 }
 
 #nav li a {
