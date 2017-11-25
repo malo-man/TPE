@@ -79,48 +79,13 @@ $("#next").on("click", (e) => {
         img();
     }
 });
-/*
-function prec() {
-
-}
-
-function suiv() {
-
-}
-*/
-//var diapo = true;
-
-/*function dispDiapo() {
-    RemoveElement("toggleDiapo");
-    if (diapo) {
-        SetDisp("prev", "inline-block");
-        SetDisp("next", "inline-block");
-        SetDisp("image", "inline-block");
-        AddElement("div", "toggleDiapo", "Cacher diapo", "count");
-        img();
-    } else {
-        SetDisp("prev", "none");
-        SetDisp("next", "none");
-        SetDisp("image", "none");
-        SetDisp("c", "none");
-        AddElement("div", "toggleDiapo", "Afficher diapo", "count");
-    }
-    //SetAttribute("toggleDiapo", "class", "button");
-    ClickEvent("toggleDiapo", dispDiapo);
-    diapo = !diapo;
-}*/
 
 $("#toggleDiapo").on("click", e => {
     $("#diapo, #c").slideToggle();
     $("#next,#prev").fadeToggle(100);
 });
 
-//dispDiapo();
 img();
-
-//ClickEvent("toggleDiapo", dispDiapo);
-//ClickEvent("prev", prec);
-//ClickEvent("next", suiv);
 
 $("nav a").on("click", function(e) {
     e.preventDefault();
