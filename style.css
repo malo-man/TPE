@@ -3,6 +3,7 @@ body {
     padding: 0;
     /*background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);*/
     background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    overflow-y: scroll;
 }
 
 header {
