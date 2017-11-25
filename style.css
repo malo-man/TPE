@@ -5,8 +5,9 @@ body {
 }
 
 header {
-    background: linear-gradient(45deg, rgba(0, 128, 128, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(5, 193, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(0, 87, 87, 1) 100%);
+    /*background: linear-gradient(45deg, rgba(0, 128, 128, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(5, 193, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(0, 87, 87, 1) 100%);*/
     background-size: cover;
+    background: linear-gradient(to right, #00f260, #0575e6);
 }
 
 h1 {
