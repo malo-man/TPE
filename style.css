@@ -154,7 +154,7 @@ section {
 }
 
 section h2 {
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 200%;
     letter-spacing: .5em;
@@ -162,6 +162,7 @@ section h2 {
 
 section p {
     font-family: sans-serif;
+    line-height: 1.5em;
 }
 
 footer {
