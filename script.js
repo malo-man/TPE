@@ -123,7 +123,7 @@ img();
 $("nav a").on("click", function(e) {
     e.preventDefault();
     $("#content").html("");
-    $("#content").load($(this).attr("href") + ".html");
+    $("#content").load($(this).attr("href"));
 });
 
 $("a[href='presentation.html']").trigger("click");

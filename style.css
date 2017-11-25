@@ -45,7 +45,6 @@ h3 {
     background: darkblue;
     color: white;
     cursor: pointer;
-    transition: .2s;
 }
 
 #nav>ul>li>a {
@@ -55,7 +54,7 @@ h3 {
 
 #nav>ul>li:hover>a,
 #nav ul li ul li:hover {
-    background: rgba(100, 100, 100, .7);
+    background: midnightblue;
 }
 
 #nav>ul>li ul {
@@ -73,6 +72,7 @@ h3 {
 #nav li a {
     color: white;
     text-decoration: none;
+    transition: .2s;
 }
 
 div {
@@ -150,7 +150,9 @@ section {
 
 section h2 {
     font-family: sans-serif;
-    text-decoration: underline;
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: .5em;
 }
 
 section p {
@@ -160,4 +162,8 @@ section p {
 footer {
     font-family: sans-serif;
     padding: 10px;
+}
+
+#pb {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
