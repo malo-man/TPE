@@ -50,10 +50,10 @@ function ClickEvent(Id, act) {
 }
 
 var Nimage = 1;
-var iMax = 4;
+var iMax = 3;
 
 function img() {
-    $("#image").attr("src", "img/img" + Nimage + ".JPG");
+    $("#image").attr("src", "img" + Nimage + ".JPG");
     $("#c").html("Image n°" + Nimage + " sur " + iMax, "count")
 }
 
@@ -108,11 +108,9 @@ function suiv() {
     diapo = !diapo;
 }*/
 
-$("#toggleDiapo").on("click", (e) => {
-	$("#prev").slideToggle();
-	$("#next").slideToggle();
-    $("#diapo").slideToggle();
-    $("#c").slideToggle();
+$("#toggleDiapo").on("click", e => {
+    $("#diapo, #c").slideToggle();
+    $("#next,#prev").toggle();
 });
 
 //dispDiapo();
