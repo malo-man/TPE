@@ -213,3 +213,8 @@ hr:after {
 #pb {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+#pr img {
+	width:60%;
+	margin-left:20%;
+}

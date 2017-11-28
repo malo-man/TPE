@@ -3,15 +3,57 @@
     Definition :<br/> “La piézoélectricité est la propriété que possèdent certains corps de se polariser électriquement sous l’action d’une contrainte mécanique et réciproquement de se déformer lorsqu’on leur applique un champ électrique”.
     <br/><br/>
 </p>
-<h4>Objectif</h4>
+<h4>Expériences</h4>
 
-<p>Nous cherchons à montrer par nos expériences qu'il est possible d'alimenter un objet connécté avec la seule énergie de la piezoélectricité. Cela permettrait de se passer de batteries et de toute forme d'énergie polluante utilisée dans la recharge d'un
-    appareil connecté.
+<p>Nous cherchons à calculer l'énergie que nous pouvons produire à l'aide de cellules piezoélectriques.</p>
+
+<h5>Application à la marche des êtres humains</h5>
+
+<p>Protocole :<br/>
+Nous allons scotcher une cellule piezoélectrique au dessous de la semelle de Bilal et mesurer le voltage produit par une marche de 10 secondes.
+Nous allons donc utiliser le logiciel Latis Pro afin de mesurer le voltage et de tracer des graphqiues.
+De plus nous allons déterminer quelle est la zone du pied la plus intéressante pour placer la cellule.
 </p>
+
+<p>Matériel :<br/>
+Cellule piezoélectrique :<br/>
+<img src="data/piezo.jpg"/>
+Centrale Latis :<br/>
+Du scotch :<br/>
+</p>
+
+<p id="pr">Résultats :<br/>
+Sous le bout du pied : <br/>
+<img src="data/voltmarche2_devant.JPG"/><br/>
+On peut observer que l'on atteint tout juste 1V à chaque pas.<br/>
+Sous le milieu du pied :<br/>
+<img src="data/voltmarche1_milieu.JPG"/><br/>
+Cette fois-ci, on atteint 3V à chaque pas, le milieu du pied est donc bien plus aproprié afin de placer une cellule.<br/>
+Sous le talon :<br/>
+<img src="data/voltmarche3_arriere.JPG"/><br/>
+Sous le talon, le voltage est légèrement plus faible, on atteint 2V à chaque pas<br/>
+Ensuite, nous avons décidé de tester une cellule dans la chaussure :<br/>
+<img src="data/voltmarche4_interne.JPG"/><br/>
+Le résultat est très décevant, on atteint à peine 1V</p>
+
+<p>Conclusion:<br/>
+Nous avons pu observer que en mettant une cellule sous le milieu du pied, on pouvait obtenir un voltage satisfaisant</p>
+
+<p>Partie 2: Trouver l'intensité générée (Avec des maths)</p>
+
+<p>On a F la pression appliquée par Bilal à chaque pas (la moitié de son poid) sur la surface de la cellule, d33 le coefficient piezoélectrique qui dépend du matériau de la cellule (ici du quartz) et Q la charge électrique générée par la contrainte mechanique<br/>
+Or comme nous l'ont appris les documents scientifiques (allez check la bibliographie pour plus d'informations) que nous avons consulté : Q = d33 x F<br/>
+On sait que F = 196.2N/2.8x10<sup>-15</sup>m<sup>2</sup> et d33 = 2.33x10<sup>-12</sup><br/>
+Par conséquent, dans le cas de Bilal, la charge en Coulombs générée par Bilal à chaque pas est de 1.456x10<sup>-6</sup>C<br/>
+Or 1C = 1000mAs donc Bilal génère 1.456x10<sup>-3</sup>mAs ce qui nous fait donc à peu près 5mAh.<br/>
+Cela signifie que pendant une marche de 1h, Bilal peut générer 5mA, ce qui permettrait de rechrger une batterie de 3500mAh à hauteur de 0.15%</p>
+
+
+<p>Conclusion sur la piezoélectricité :</p>
+
+<p>Nous avons vu grace à nos expériences que l'on peut en effet produire de l'énergie grâce à des cellules piezoélectriques. Cependant, elles sont trop peu efficaces afin d'être utilisées dans le cadre d'un usage personnel.<br/>
+Malgré cela, nous pourrions envisager des routes ou même un sol très féquenté bardé de cellules piezoélectriques, la contrainte mechaniques d'une foule ou de plusieurs voitures serait suffisantes afin de recharger des objets connectés dans des ppoints de rechrge libre ou même pour alimenter l'éclairage public</p>
 
 
 
 <video src="img/video1.mp4" style="width:360px; height:640px;" controls></video>
-<p>
-    Des utilisations :<br/> - Vibrations (voitures, camions, avions, etc)<br/> - Montres à quartz<br/>
-</p>
