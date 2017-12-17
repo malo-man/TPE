@@ -3,6 +3,7 @@
 var loc = window.location;
 var doc = document;
 var c = "click";
+// NANY !?
 const LACONSTANTEAVECLENOMLEPLUSLONGDUMONDEETQUISERTARIEN = undefined;
 
 function link(floc) {
