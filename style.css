@@ -75,15 +75,15 @@ h3 {
     text-align: center;
     margin: 0px;
     font-family: sans-serif;
-    background: darkred;
-    border-bottom: 3px solid darkred;
+    background: darkorange;
+    border-bottom: 3px solid darkorange;
     color: white;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 #nav>ul>li:hover {
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid blue;
 }
 
 #nav>ul>li>a {
@@ -99,14 +99,14 @@ h3 {
 
 #nav>ul>li:hover>a,
 #nav ul li ul li:hover a {
-    background: red;
+    background: orange;
 }
 
 #nav>ul>li ul {
     display: none;
     position: absolute;
     z-index: 500;
-    background: darkred;
+    background: darkorange;
     width: 25%;
     box-shadow: 5px 5px 10px black;
     margin-top: 3px;

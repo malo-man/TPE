@@ -6,52 +6,6 @@ var c = "click";
 // NANY !?
 const LACONSTANTEAVECLENOMLEPLUSLONGDUMONDEETQUISERTARIEN = undefined;
 
-function link(floc) {
-    window.location = floc;
-}
-
-function GetValue(Id) {
-    return doc.getElementById(Id).value;
-}
-
-function AddElement(type, Id, txt, Id2) {
-    var element = doc.createElement(type);
-    element.textContent = txt;
-    element.setAttribute("id", Id);
-    doc.getElementById(Id2).appendChild(element);
-}
-
-function SetDisp(Id, val) {
-    document.getElementById(Id).style.display = val;
-}
-
-function GetDisp(Id) {
-    return document.getElementById(Id).style.display;
-}
-
-function SetAttribute(Id, attribute, val) {
-    doc.getElementById(Id).setAttribute(attribute, val);
-}
-
-function GetAttribute(Id, attribute) {
-    return doc.getElementById(Id).getAttribute(attribute);
-}
-
-function AddImg(Id, l, Id2) {
-    var element = doc.createElement("img");
-    element.setAttribute("src", l);
-    element.setAttribute("id", Id);
-    doc.getElementById(Id2).appendChild(element);
-}
-
-function RemoveElement(Id) {
-    doc.getElementById(Id).parentNode.removeChild(doc.getElementById(Id));
-}
-
-function ClickEvent(Id, act) {
-    doc.getElementById(Id).addEventListener(c, act);
-}
-
 var Nimage = 1;
 var iMax = 3;
 
