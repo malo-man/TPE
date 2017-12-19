@@ -56,12 +56,6 @@ header {
     float: right;
 }
 
-#header2>nav>ul>li {
-    width: 24%;
-    float: left;
-    background: rgba(0, 0, 0, .3);
-}
-
 h1 {
     font-family: sans-serif;
     margin: 0;
@@ -102,7 +96,7 @@ h3 {
     text-align: center;
     margin: 0px;
     font-family: sans-serif;
-    background: darkorange;
+    background: rgba(0, 0, 0, .3);
     border-bottom: 3px solid darkorange;
     color: white;
     cursor: pointer;
@@ -133,8 +127,8 @@ h3 {
     display: none;
     position: absolute;
     z-index: 500;
-    background: darkorange;
-    width: 25%;
+    background: rgba(0, 120, 0, 1);
+    width: 17.3%;
     box-shadow: 5px 5px 10px black;
     margin-top: 3px;
 }
