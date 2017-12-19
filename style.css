@@ -113,7 +113,7 @@ h3 {
 
 #nav>ul>li:hover>a,
 #nav ul li ul li:hover a {
-    background: orange;
+    background: rgba(0, 0, 0, .4);
 }
 
 #nav>ul>li ul {
