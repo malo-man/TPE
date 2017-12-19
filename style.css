@@ -24,6 +24,10 @@ h5 {
     color: white !important;
 }
 
+a {
+  color: lightgreen;
+}
+
 header {
     /*background: linear-gradient(45deg, rgba(0, 128, 128, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(5, 193, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(0, 87, 87, 1) 100%);*/
     background-size: cover;
@@ -71,10 +75,11 @@ h3 {
     text-align: center;
     margin: 0px;
     font-family: sans-serif;
-    background: darkblue;
-    border-bottom: 3px solid darkblue;
+    background: darkred;
+    border-bottom: 3px solid darkred;
     color: white;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 #nav>ul>li:hover {
@@ -94,14 +99,14 @@ h3 {
 
 #nav>ul>li:hover>a,
 #nav ul li ul li:hover a {
-    background: blue;
+    background: red;
 }
 
 #nav>ul>li ul {
     display: none;
     position: absolute;
     z-index: 500;
-    background: darkblue;
+    background: darkred;
     width: 25%;
     box-shadow: 5px 5px 10px black;
     margin-top: 3px;
