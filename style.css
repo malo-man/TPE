@@ -50,14 +50,15 @@ header {
 }
 
 #header2 #menu {
-    width: 80%;
+    width: 70%;
+    margin-left: 10%;
     margin-top: 30px;
     float: right;
 }
 
 #header2>nav>ul>li {
     width: 24%;
-    float: right;
+    float: left;
     background: rgba(0, 0, 0, .3);
 }
 
