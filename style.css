@@ -1,12 +1,13 @@
 body {
     margin: 0;
     padding: 0;
+    background: black;
     /*background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);*/
     /*background: linear-gradient(to right, #c9d6ff, #e2e2e2);*/
-    background-color: black;
+    /*background-color: black;
     background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
     /*background: url("https://cdn.discordapp.com/attachments/268727299082289162/390951863547330580/Renewable_energy_sources.jpg");
     background-size: cover;*/
     overflow-y: scroll;
@@ -25,13 +26,14 @@ h5 {
 }
 
 a {
-  color: lightgreen;
+    color: lightgreen;
 }
 
 header {
     /*background: linear-gradient(45deg, rgba(0, 128, 128, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(5, 193, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(0, 87, 87, 1) 100%);*/
     background-size: cover;
     background: linear-gradient(to right, #00f260, #0575e6);
+    background: url();
     padding: 10px;
 }
 
