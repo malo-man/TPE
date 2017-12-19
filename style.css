@@ -30,23 +30,16 @@ a {
 }
 
 header {
-    /*background: linear-gradient(45deg, rgba(0, 128, 128, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(5, 193, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(0, 87, 87, 1) 100%);*/
-    background-size: cover;
-    background: linear-gradient(to right, #00f260, #0575e6);
-    padding: 10px;
-}
-
-#header2 {
-    background: url("bannier3.gif");
+    background: url("bannier4.jpg");
     background-size: cover;
     height: 100px;
-    border: 1px solid white;
+    padding: 10px;
 }
 
 #header2 h1 {
     width: 20%;
     float: left;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #header2 #menu {
