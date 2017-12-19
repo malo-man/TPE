@@ -36,6 +36,30 @@ header {
     padding: 10px;
 }
 
+#header2 {
+    background: url("bannier3.gif");
+    height: 150px;
+    border: 1px solid white;
+}
+
+#header2 h1 {
+    width: 20%;
+    float: left;
+    margin-top: 20px;
+}
+
+#header2 #menu {
+    width: 80%;
+    margin-top: 50px;
+    float: right;
+}
+
+#header2>nav>ul>li {
+    width: 24%;
+    float: right;
+    background: rgba(0, 0, 0, .3);
+}
+
 h1 {
     font-family: sans-serif;
     margin: 0;
