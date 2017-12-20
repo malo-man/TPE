@@ -207,7 +207,7 @@ div {
 #image {
     display: inline-block;
     width: 90%;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 0px 0px 15px white;
 }
 
 section {
