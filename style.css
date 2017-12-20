@@ -128,6 +128,10 @@ h3 {
     margin-top: 3px;
 }
 
+#nav ul li ul li:hover a {
+    font-size: 105%;
+}
+
 
 /*#nav>ul>li:hover ul {
     display: block;
