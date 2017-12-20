@@ -215,9 +215,12 @@ div {
 }
 
 section {
-    padding: 1px 20px;
     width: 100%;
     clear: both;
+}
+
+#content {
+    padding: 1px 20px;
 }
 
 section h2 {
