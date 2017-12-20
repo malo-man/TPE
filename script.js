@@ -7,10 +7,10 @@ var c = "click";
 const LACONSTANTEAVECLENOMLEPLUSLONGDUMONDEETQUISERTARIEN = undefined;
 
 var Nimage = 1;
-var iMax = 3;
+var iMax = 8;
 
 function img() {
-    $("#image").attr("src", "img" + Nimage + ".JPG");
+    $("#image").attr("src", "diapo/img" + Nimage + ".JPG");
     $("#c").html("Image n°" + Nimage + " sur " + iMax, "count")
 }
 
