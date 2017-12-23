@@ -53,6 +53,7 @@ $("nav a").on("click", function(e) {
     }
 });
 
+$("div[id='toggleDiapo']").trigger("click");
 $("a[href='presentation.html']").trigger("click");
 
 $("#nav>ul>li").hover(function(e) {
