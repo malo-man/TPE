@@ -63,4 +63,4 @@ $("#nav>ul>li").hover(function(e) {
 
 var interval = setInterval(() => {
     $("#next").trigger("click");
-}, 4000);
+}, 5000);
