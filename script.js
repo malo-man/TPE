@@ -3,7 +3,7 @@
 var loc = window.location;
 var doc = document;
 var c = "click";
-// NANY !?
+// NANI !? OMAEWA MOU SHINDE IRU !!!
 const LACONSTANTEAVECLENOMLEPLUSLONGDUMONDEETQUISERTARIEN = undefined;
 
 var Nimage = 1;
