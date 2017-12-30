@@ -1,9 +1,7 @@
 /// <reference path="jquery.d.ts" />
 
-var loc = window.location;
-var doc = document;
 var c = "click";
-// NANY !?
+// NANI !? OMAEWA MOU SHINDE IRU !!!
 const LACONSTANTEAVECLENOMLEPLUSLONGDUMONDEETQUISERTARIEN = undefined;
 
 var Nimage = 1;
@@ -11,7 +9,7 @@ var iMax = 8;
 
 function img() {
     $("#image").attr("src", "diapo/img" + Nimage + ".JPG");
-    $("#c").html("Image n°" + Nimage + " sur " + iMax, "count")
+    //$("#c").html("Image n°" + Nimage + " sur " + iMax, "count")
 }
 
 
@@ -53,15 +51,17 @@ $("nav a").on("click", function(e) {
     }
 });
 
+$("#toggleDiapo").trigger("click");
 $("a[href='presentation.html']").trigger("click");
 
 $("#nav>ul>li").hover(function(e) {
     $(this).children("ul").slideToggle(100);
-})
+});
 
 
 var interval = setInterval(() => {
     $("#next").trigger("click");
+<<<<<<< HEAD
 }, 4000);
 
 
@@ -70,3 +70,6 @@ var interval = setInterval(() => {
 $(document).on("keydown", e => {
     if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault();
 });
+=======
+}, 5000);
+>>>>>>> ddcffc5b26174358a60e6e0db6b38ac0ca3a1cc1
