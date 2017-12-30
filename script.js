@@ -61,7 +61,6 @@ $("#nav>ul>li").hover(function(e) {
 
 var interval = setInterval(() => {
     $("#next").trigger("click");
-<<<<<<< HEAD
 }, 4000);
 
 
@@ -70,6 +69,3 @@ var interval = setInterval(() => {
 $(document).on("keydown", e => {
     if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault();
 });
-=======
-}, 5000);
->>>>>>> ddcffc5b26174358a60e6e0db6b38ac0ca3a1cc1
