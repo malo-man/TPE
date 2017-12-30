@@ -63,3 +63,10 @@ $("#nav>ul>li").hover(function(e) {
 var interval = setInterval(() => {
     $("#next").trigger("click");
 }, 4000);
+
+
+////// PREVENT F5
+
+$(document).on("keydown", e => {
+    if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault();
+});

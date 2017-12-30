@@ -160,6 +160,7 @@ div {
     transform: scale(1);
     cursor: pointer;
     font-family: sans-serif;
+    margin-top: 35px;
     transition: .2s;
 }
 
