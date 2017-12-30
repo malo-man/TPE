@@ -66,6 +66,4 @@ var interval = setInterval(() => {
 
 ////// PREVENT F5
 
-$(document).on("keydown", e => {
-    if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault();
-});
+//$(document).on("keydown", e => { if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault(); });
