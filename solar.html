@@ -96,7 +96,106 @@
     </tr>
 </table>
 
+<p>Concernant l'instensité en fonction de la résistance, cela nous donne le graphique suivant :</p>
 <img src="graph/sol/ir.png" />
+<p>On peut observer une augmentation progressive en fonction de la résistance</p>
+<p>Par suite, pour la tension en fonction de la résistance, nous obtenons ceci :</p>
 <img src="graph/sol/tr.png" />
+<p>On observe une diminution de la tension, ce qui est logique puisque U=RxI et que l'intensité augmente plus lentement que la résistance baisse</p>
+<p>Nous pouvons ensuite refaire le même tableau en ajoutant la colonne puissance, qui s'obtient par la simple multiplication de l'intensité et de la tension. On obtient donc le tableau suivant :</p>
+
+
+<table border="1">
+    <tr>
+        <th>Puissance (en W)</th>
+        <th>Intensité (en mA)</th>
+        <th>Tension (en V)</th>
+        <th>Résistance (en &Omega;)</th>
+    </tr>
+
+    <tr>
+        <td>0,00221</td>
+        <td>0,065</td>
+        <td>34</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>0,0139728</td>
+        <td>0,426</td>
+        <td>32,8</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>0,0149778</td>
+        <td>0,471</td>
+        <td>31,8</td>
+        <td>87</td>
+    </tr>
+    <tr>
+        <td>0,01507</td>
+        <td>0,55</td>
+        <td>27,4</td>
+        <td>85</td>
+    </tr>
+    <tr>
+        <td>0,014157</td>
+        <td>0,585</td>
+        <td>24,2</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>0,0106222</td>
+        <td>0,614</td>
+        <td>17,3</td>
+        <td>70</td>
+    </tr>
+    <tr>
+        <td>0,0082632</td>
+        <td>0,626</td>
+        <td>13,2</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>0,006678</td>
+        <td>0,630</td>
+        <td>10,6</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>0,0056426</td>
+        <td>0,634</td>
+        <td>8,9</td>
+        <td>40</td>
+    </tr>
+    <tr>
+        <td>0,0048972</td>
+        <td>0,636</td>
+        <td>7,7</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>0,0042746</td>
+        <td>0,638</td>
+        <td>6,7</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>0,003834</td>
+        <td>0,639</td>
+        <td>6</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>0,003456</td>
+        <td>0,64</td>
+        <td>5,4</td>
+        <td>0</td>
+    </tr>
+</table>
+
+<p>On obtient donc un graphique représentant la puissance en fonction de la résistance que voici :</p>
+
 <img src="graph/sol/pt.png" />
+
+<p>Cela nous montre que pour des performances optimales pour alimenter un objet connecté, nous devrons régler la résistance sur 85&Omega;. C'est ce que nous ferons dans la seconde expérience.</p>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
