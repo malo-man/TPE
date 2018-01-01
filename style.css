@@ -264,3 +264,11 @@ hr:after {
 #lastpict {
     margin-left: 18.25%;
 }
+
+table {
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+}
