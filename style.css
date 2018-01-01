@@ -17,6 +17,10 @@ h5 {
     color: white !important;
 }
 
+p {
+    text-align: justify;
+}
+
 a {
     color: lightgreen;
 }
