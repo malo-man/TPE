@@ -233,11 +233,14 @@ footer {
     font-family: sans-serif;
     padding: 10px;
     text-align: center;
+    clear: both;
 }
 
 hr {
     border: 0;
     text-align: center;
+    clear: both;
+    width: 100%;
 }
 
 hr:after {
@@ -276,7 +279,6 @@ table {
 }
 
 #tothetop {
-    border-radius: 100%;
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -284,9 +286,11 @@ table {
 }
 
 #tothetop img {
+    border-radius: 100%;
     width: 60px;
     transform: scale(1.0);
     cursor: pointer;
+    box-shadow: 0 0 7px white;
     transition: .2s;
 }
 
