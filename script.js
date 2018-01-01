@@ -63,6 +63,18 @@ var interval = setInterval(() => {
     $("#next").trigger("click");
 }, 4000);
 
+$(window).scroll(function(e) {
+    if ($(this).scrollTop() > 100) {
+        $("#tothetop").fadeIn(200);
+    } else {
+        $("#tothetop").fadeOut(200);
+    }
+});
+
+$("#tothetop").on("click", (e) => {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 300);
+})
 
 ////// PREVENT F5
 

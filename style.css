@@ -274,3 +274,22 @@ table {
     font-family: sans-serif;
     font-size: 150%;
 }
+
+#tothetop {
+    border-radius: 100%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+}
+
+#tothetop img {
+    width: 60px;
+    transform: scale(1.0);
+    cursor: pointer;
+    transition: .2s;
+}
+
+#tothetop img:hover {
+    transform: scale(1.1);
+}
