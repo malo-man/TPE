@@ -293,3 +293,7 @@ table {
 #tothetop img:hover {
     transform: scale(1.1);
 }
+
+#solpic img {
+    max-height: 300px;
+}
