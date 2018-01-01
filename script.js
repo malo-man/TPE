@@ -74,7 +74,8 @@ $(window).scroll(function(e) {
 $("#tothetop").on("click", (e) => {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, 300);
-})
+});
+$("#tothetop").trigger("click");
 
 ////// PREVENT F5
 
