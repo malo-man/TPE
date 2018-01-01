@@ -41,7 +41,6 @@ $("#toggleDiapo").on("click", e => {
 img();
 
 $("nav a").on("click", function(e) {
-    //document.write("<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>");
     e.preventDefault();
     if ($(this).attr("href") != undefined) {
         $("#content").fadeOut(100, () => {
