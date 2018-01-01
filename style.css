@@ -295,6 +295,7 @@ table {
 }
 
 #solpic img,
-#piezopic img {
+#piezopic img,
+#seebeckpic img {
     max-height: 300px;
 }
