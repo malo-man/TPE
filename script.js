@@ -43,6 +43,7 @@ img();
 $("nav a").on("click", function(e) {
     e.preventDefault();
     if ($(this).attr("href") != undefined) {
+        $("#tothetop").trigger("click");
         $("#content").fadeOut(100, () => {
             $("#content").load($(this).attr("href"), () => {
                 $("#content").fadeIn();
