@@ -118,32 +118,32 @@
 <div>
     <h3>Jour 11 : 12/12/2017</h3>
     <h4>Objectifs :</h4>
-    <p>Etablir une fonction qui à toute différence de température ∆T (en Kelvin) associe une tension U (en Volt). Avec cette formule, nous allons nous retrouver en mesure de calculer l’intensité dans notre circuit.</p>
+    <p>Etablir une fonction qui à toute différence de température ∆T (en Kelvin) associe une tension U (en Volt). Avec cette formule, nous allons être en mesure de calculer l’intensité dans notre circuit.</p>
     <h4>Matériel:</h4>
-    <p>x1 Un module a effet Peltier <br/>x1 Un chauffage<br/> x1 Un bécher <br/>x1 De l’eau du robinet <br/>x1 Un multimètre <br/>x1 Un dissipateur thermique (puissance max dissipé 65W) => Ventirad de PC <br/>x1 Une résistance de 10Ω</p>
+    <p>x1 module a effet Peltier <br/>x1 chauffage<br/> x1 bécher <br/>De l’eau du robinet <br/>x1 multimètre <br/>x1 dissipateur thermique (puissance max dissipé 65W) => Ventirad de PC <br/>x1 résistance de 10Ω</p>
     <h4>Déroulement :</h4>
     <p>On fait chauffer de l’eau dans un bécher jusqu’à une température plus élevée que celle du milieu ambiant. Ensuite on immerge partiellement une face du module Peltier dans l’eau pour faire chauffer l’une de ses deux faces. On utilise le dissipateur
         thermique pour refroidir l’autre face du peltier. De cette différence de température naît ainsi un courant électrique. Nous établissons alors un tableau qui, à toute différence de température ∆T, associe la tension U spécifiée en circuit ouvert.
-        Nous pouvons alors tracer un graphique de ces résultats. Il en résulte une droite passant par l’origine, dont nous pouvons calculer le coefficient directeur appelé coefficient Seebeck. Par la suite, nous pouvons brancher le module en série avec
-        une résistance de 10Ω, et grâce à la relation U=RI , en déduire l’intensité parcourant le circuit.</p>
+        Nous pouvons alors tracer un graphique de ces résultats. Il en résulte une droite, passant par l’origine, dont nous pouvons calculer le coefficient directeur appelé coefficient Seebeck. Par la suite, nous pouvons brancher le module en série avec
+        une résistance de 10Ω, et grâce à la relation U=RxI , en déduire l’intensité parcourant le circuit.</p>
     <h4>Résultats :</h4>
-    <p>En plaçant nos points sur un repère orthonormé,nous obtenons une droite passant par l’origine du repère. La droite représente la fonction qui à toute différence de température en K° aux faces de notre peltier, associe une tension en V. Avec une résistance
+    <p>En plaçant nos points sur un repère orthonormé, nous obtenons une droite passant par l’origine du repère. La droite représente la fonction qui à toute différence de température en °K aux faces de notre peltier, associe une tension en V. Avec une résistance
         de 10Ω, pour une tension de 1mV, on calcule une intensité de 100mA, comme U=RI nous pouvons calculer une intensité pour n’importe quelle tension. Cependant ce résultat est théorique car il ne prend pas en compte la résistance interne de notre
-        module peltier qui est relativement élevée (elle est la cause du mauvais rendement)</p>
+        module peltier qui est relativement élevée (elle est la cause du mauvais rendement).</p>
 </div>
 <hr/>
 <div>
     <h3>Jour 12 : 18/12/2017</h3>
     <h4>Objectif :</h4>
-    <p>Affiner nos mesures de tension aux bornes du module peltier et calculer l’intensité du circuit. Nous mesurerons le voltage généré par notre module pour vérifier si nos calcules sont justes.</p>
+    <p>Affiner nos mesures de tension aux bornes du module peltier et calculer l’intensité du circuit. Nous mesurerons le voltage généré par notre module pour vérifier si nos calculs sont justes.</p>
     <h4>Matériel :</h4>
-    <p>x1 Chauffage<br/>x1 Module à effet Peltier<br/> x1 Un bécher<br/>x1 De l’eau du robinet<br/>x1 Un multimètre<br/>x1 Un dissipateur thermique (puissance max dissipé 65W) => Ventirad de PC<br/>x1 Une résistance de 10Ω</p>
+    <p>x1 Chauffage<br/>x1 Module à effet Peltier<br/> x1 bécher<br/>De l’eau du robinet<br/>x1 multimètre<br/>x1 dissipateur thermique (puissance max dissipé 65W) => Ventirad de PC<br/>x1 résistance de 10Ω</p>
     <h4>Déroulement :</h4>
-    <p>Même chose que la semaine précédente, nous allons mesurer de nouvelles tensions pour affiner le graphique. Ensuite, en branchant un ampèremètre en série dans le système ainsi qu’une résistance de 10Ω, nous allons calculer la résistance interne du
+    <p>Même chose que la semaine précédente, nous allons mesurer de nouvelles tensions pour affiner le graphique. Ensuite, en branchant un ampèremètre en série dans le circuit ainsi qu’une résistance de 10Ω, nous allons calculer la résistance interne du
         module peltier, ce qui nous permettra de trouver une fonction qui à toute tension U associe une intensité I. Nous utiliserons la relation U=RI.</p>
     <h4>Résultats :</h4>
-    <p>On sait que R=10+x où xreprésente la résistance interne du module peltier et 10 la résistance déjà présente dans le circuit. De plus, nous pouvons mesurer l’intensité avec l’ampèremètre et la tension avec le voltmètre. On en déduit les relations suivantes
-        : I =UR⇔ I =U10+x⇔ x=UI-10 Ensuite, nous relevons la tension aux bornes du module et l’intensité du courant dans le circuit, on trouve : I =0,019 Aet U=0,36 V On en déduit la résistance interne du module peltier qui est donc de 8.37Ω. La résistance
+    <p>On sait que R=10+X où X représente la résistance interne du module peltier et 10 la résistance déjà présente dans le circuit. De plus, nous pouvons mesurer l’intensité avec l’ampèremètre et la tension avec le voltmètre. On en déduit les relations suivantes
+        : I = UR ⇔ I = U10+X ⇔ X = UI-10 Ensuite, nous relevons la tension aux bornes du module et l’intensité du courant dans le circuit, on trouve : I = 0,019 Aet U = 0,36 V On en déduit la résistance interne du module peltier qui est donc de 8.37Ω. La résistance
         totale du circuit est donc de 10+8.37 soit 18.37Ω. Comme I=UR, et que R est constant, nous avons trouvé la fonction qui à toute tension mesurée au bornes du module peltier associe une intensité électrique.
     </p>
 </div>
