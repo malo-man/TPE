@@ -32,6 +32,10 @@ h5 {
     clear: both;
 }
 
+p {
+    text-align: justify;
+}
+
 p,
 h3,
 h4,
