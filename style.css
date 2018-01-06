@@ -16,6 +16,7 @@ h4,
 h5 {
     max-width: 98%;
     color: white !important;
+    clear: both;
 }
 
 a {
