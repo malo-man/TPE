@@ -9,6 +9,16 @@ body {
     height: 100%;
 }
 
+::selection {
+    color: inherit !important;
+    background: inherit !important;
+}
+
+::-moz-selection {
+    color: inherit !important;
+    background: inherit !important;
+}
+
 p,
 h1,
 h2,
@@ -75,11 +85,6 @@ h3 {
 
 h4 {
     font-family: sans-serif;
-}
-
-::selection {
-    color: inherit !important;
-    background: inherit !important;
 }
 
 #nav {
