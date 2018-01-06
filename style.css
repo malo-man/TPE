@@ -15,7 +15,7 @@ body {
 }
 
 ::-moz-selection {
-    color: inherit !important;
+    color: rgba(10, 255, 10, .3);
     background: inherit !important;
 }
 
