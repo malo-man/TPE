@@ -10,13 +10,15 @@ body {
 }
 
 ::selection {
-    color: inherit !important;
-    background: inherit !important;
+    color: rgba(0, 255, 0, .5);
+    background: inherit;
+    text-shadow: none;
 }
 
 ::-moz-selection {
-    color: rgba(10, 255, 10, .3);
-    background: inherit !important;
+    color: rgba(0, 255, 0, .5);
+    background: inherit;
+    text-shadow: none;
 }
 
 p,
