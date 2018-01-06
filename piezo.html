@@ -1,37 +1,65 @@
-<h3>La Piézoélectricité</h3>
-<p>
-    Definition :<br/> “La piézoélectricité est la propriété que possèdent certains corps de se polariser électriquement sous l’action d’une contrainte mécanique et réciproquement de se déformer lorsqu’on leur applique un champ électrique”.
+<h2>La Piézoélectricité</h2>
+<h3>Definition :</h3>
+<p>“La piézoélectricité est la propriété que possèdent certains corps de se polariser électriquement sous l’action d’une contrainte mécanique et réciproquement de se déformer lorsqu’on leur applique un champ électrique”.
     <br/><br/>
 </p>
-<h4>Expériences</h4>
+<h3>Expérience 1</h3>
 
 <p>Nous cherchons à calculer l'énergie que nous pouvons produire à l'aide de cellules piezoélectriques.</p>
 
-<h5>Application à la marche des êtres humains</h5>
+<h4>Application à la marche des êtres humains</h4>
 
-<p>Protocole :<br/> Nous allons "scotcher" une cellule piezoélectrique en dessous de la semelle de Bilal et mesurer le voltage produit par une marche de 10 secondes. Nous allons donc utiliser le logiciel Latis Pro afin de mesurer le voltage et de tracer
-    des graphiques. De plus nous allons déterminer quelle est la zone du pied la plus intéressante pour placer la cellule.
+<h4>Protocole :</h4>
+<p>Nous allons "scotcher" une cellule piezoélectrique en dessous de la semelle de Bilal et mesurer le voltage produit par une marche de 10 secondes. Nous allons donc utiliser le logiciel Latis Pro afin de mesurer le voltage et de tracer des graphiques. De
+    plus nous allons déterminer quelle est la zone du pied la plus intéressante pour placer la cellule.
 </p>
 
-<p id="mat">Matériel :<br/> Cellule piezoélectrique :<br/>
-    <img src="data/piezo/piezo.jpg" /><br/> Centrale Latis :<br/>
-    <img src="data/piezo/latis.jpg" /><br/> Du scotch :<br/>
-    <img src="data/piezo/scotch.jpg" /><br/> et Bilal :<br/>
-    <img src="data/bilal.jpg" /><br/>
+<h4>Matériel :</h4>
+
+<p id="mat">Cellule piezoélectrique :<br/><img src="data/piezo/piezo.jpg" />
+    <br/> Centrale Latis :<br/><img src="data/piezo/latis.jpg" />
+    <br/> Du scotch :<br/><img src="data/piezo/scotch.jpg" />
+    <br/> et Bilal :<br/><img src="data/bilal.jpg" /><br/>
 </p>
 
-<p id="pr">Résultats :<br/> Quand Bilal marche 10s avec la cellule piezoélectrique sous la pointe de sa chaussure : <br/>
+<h4>Résultats :</h4>
+
+<p id="pr">Voici le graphique de la tension en fonction du temps lorsque Bilal marche avec la cellule collée sous l'avant de sa chaussure :<br/>
     <video src="data/piezo/videos/avant1.mp4" controls muted></video>
-    <img src="graph/piezo/voltmarche2_devant.JPG" /><br/> On peut observer que l'on atteint tout juste 1V à chaque pas.<br/> Sous le milieu du pied :<br/>
+    <img src="graph/piezo/voltmarche2_devant.JPG" /><br/> On peut observer que l'on atteint tout juste 1V au maximum à chaque pas.
+    <br/> Voici le graphique de la tension en fonction du temps lorsque Bilal marche avec la cellule collée sous le milieu de sa chaussure :<br/>
     <video src="data/piezo/videos/milieu1.mp4" controls muted></video>
-    <img src="graph/piezo/voltmarche1_milieu.JPG" /><br/> Cette fois-ci, on atteint 3V à chaque pas, le milieu du pied est donc bien plus aproprié afin de placer une cellule.<br/> Sous le talon :<br/>
+    <img src="graph/piezo/voltmarche1_milieu.JPG" /><br/>Cette fois-ci, on atteint 3V au maximum à chaque pas, le milieu du pied est donc bien plus aproprié afin de placer une cellule. <br/> Sous le talon :<br/>
     <video src="data/piezo/videos/arriere1.mp4" controls muted></video>
-    <img src="graph/piezo/voltmarche3_arriere.JPG" /><br/> Sous le talon, le voltage est légèrement plus faible, on atteint 2V à chaque pas.<br/> Ensuite, nous avons décidé de tester une cellule dans la chaussure :<br/>
-    <img src="graph/piezo/voltmarche4_interne.JPG" id="lastpict" /><br/> Le résultat est très décevant, on atteint à peine 1V</p>
+    <img src="graph/piezo/voltmarche3_arriere.JPG" /><br/>Sous le talon, le voltage est légèrement plus faible, on atteint 2V à chaque pas.<br/> Ensuite, nous avons décidé de tester une cellule dans la chaussure :<br/>
+    <img src="graph/piezo/voltmarche4_interne.JPG" id="lastpict" /><br/>Le résultat est très décevant, on atteint à peine 1V</p>
 
-<p>Conclusion :<br/> Nous avons pu observer que en mettant une cellule sous le milieu du pied, on pouvait obtenir un voltage satisfaisant.</p>
+<h4>Conclusion :</h4>
 
-<p>Partie 2 : Trouver l'intensité générée (avec des maths)</p>
+<p>Nous pouvons conclure alors que la piezo électricité permet de produire un voltage plutôt élevé, nous allons donc continuer les expériences afin de mesurer l'intensité quand la cellule est placée au milieu du pied. Grâce à ces résultats, nous pourrons
+    calculer la puissance générée par la cellule piézo-électrique</p>
+
+<h3>Expérience 2</h3>
+
+<h4>Protocole :</h4>
+
+<p>Nous allons brancher la cellule piezo-électrique en série avec une résistance de 10&Omega; (c'est le plus petit que nous avons) et en dérivation avec la centrale Latis. Nous allons donc mesurer un voltage et nous pourrons en déduire une intensité.</p>
+
+<h4>Matériel :</h4>
+
+<p id="mat">Cellule piezoélectrique :<br/><img src="data/piezo/piezo.jpg" />
+    <br/> Centrale Latis :<br/><img src="data/piezo/latis.jpg" />
+    <br/> Ampèremètre :<br/><img src="" />
+    <br/> Du scotch :<br/><img src="data/piezo/scotch.jpg" />
+    <br/> et Bilal :<br/><img src="data/bilal.jpg" /><br/>
+</p>
+
+<h4>Comment l'expérience à échouée</h4>
+
+<p>Après avoir fait le montage, Bilal a commencé à marcher pour faire l'expérience mais la centrale Latis restait déséspéremment à 0. Il s'avère que l'intensité est si faible que même avec une petite résistance de 10&Omega;, elle ne soit pas calculable de
+    la tension. Nous allons donc chercher une formule qui nous permettra de calculer une intensité.</p>
+
+<h3>Expérience 3</h3>
 
 <p>On a F la pression appliquée par Bilal à chaque pas (la moitié de son poid) sur la surface de la cellule, d33 le coefficient piezoélectrique qui dépend du matériau de la cellule (ici du quartz) et Q la charge électrique générée par la contrainte mécanique.<br/>    Or comme nous l'ont appris les documents scientifiques (allez voir la bibliographie pour plus d'informations) :<br/> <i>Q = d33 x F</i><br/> On sait que <i>F = 196.2N/2.8x10<sup>-15</sup>m<sup>2</sup></i> et <i>d33 = 2.33x10<sup>-12</sup></i><br/>    Par conséquent, dans le cas de Bilal, la charge en Coulombs générée par Bilal à chaque pas est de 1.456x10<sup>-6</sup>C<br/> Or <i>1C = 1000mAs</i> donc Bilal génère 1.456x10<sup>-3</sup>mAs ce qui nous fait donc à peu près 5mAh.<br/> Cela signifie
     que pendant une marche de 1h, Bilal peut générer 5mA, ce qui permettrait de recharger une batterie de 3500mAh (pile 9V) à hauteur de 0.15%</p>
