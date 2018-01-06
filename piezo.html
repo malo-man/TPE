@@ -61,11 +61,22 @@
 <hr/>
 <h3>Expérience 3</h3>
 
-<p>On a F la pression appliquée par Bilal à chaque pas (la moitié de son poid) sur la surface de la cellule, d33 le coefficient piezoélectrique qui dépend du matériau de la cellule (ici du quartz) et Q la charge électrique générée par la contrainte mécanique.<br/>    Or comme nous l'ont appris les documents scientifiques (allez voir la bibliographie pour plus d'informations) :<br/> <i>Q = d33 x F</i><br/> On sait que <i>F = 196.2N/2.8x10<sup>-15</sup>m<sup>2</sup></i> et <i>d33 = 2.33x10<sup>-12</sup></i><br/>    Par conséquent, dans le cas de Bilal, la charge en Coulombs générée par Bilal à chaque pas est de 1.456x10<sup>-6</sup>C<br/> Or <i>1C = 1000mAs</i> donc Bilal génère 1.456x10<sup>-3</sup>mAs ce qui nous fait donc à peu près 5mAh.<br/> Cela signifie
-    que pendant une marche de 1h, Bilal peut générer 5mA, ce qui permettrait de recharger une batterie de 3500mAh (pile 9V) à hauteur de 0.15%</p>
+<h4>La Formule</h4>
 
+<p>Nous avons trouvé une formule permettant de calculer la charge électrique générée par une cellule piézo-électrique pour une pression donnée sur un matériau donné. Elle s'écrit Q = d<sub>33</sub>x F où d<sub>33</sub> est le coefficient de piezo-électricité
+    propre au matériau de la cellule et F la force appliquée, aussi appelée pression ou même stress. Nous l'avons trouvée sur le site <a href="https://www.americanpiezo.com/knowledge-center/piezo-theory/behavior.html">American Piezo</a></p>
 
-<p>Conclusion sur la piezoélectricité :</p>
+<h4>Protocole Mathématique et Expérimental :</h4>
+
+<p>Nous allons prendre un poids de référence que nous exprimerons en N. Ce poid sera appliqué à la surface de la cellule, ce qui nous donnera la pression. La cellule étant en quartz, nous connaissons d<sub>33</sub>. La charge électrique sera donc proportionnelle
+    au poids car la surface et le coefficient sont constants.</p>
+
+<h4>Calculs</h4>
+
+<p>On a F la pression appliquée par Bilal à chaque pas (la moitié de son poid) sur la surface de la cellule, d33 le coefficient piezoélectrique qui dépend du matériau de la cellule (ici du quartz) et Q la charge électrique générée par la contrainte mécanique.<br/>    Or comme nous l'ont appris les documents scientifiques (allez voir la bibliographie pour plus d'informations) :<br/> <i>Q = d<sub>33</sub> x F</i><br/> On sait que <i>F = 196.2N/2.8x10<sup>-15</sup>m<sup>2</sup></i> et <i>d<sub>33</sub> = 2.33x10<sup>-12</sup></i><br/>    Par conséquent, dans le cas de Bilal, la charge en Coulombs générée par Bilal à chaque pas est de 1.456x10<sup>-6</sup>C<br/> Or <i>1C = 1000mAs</i> donc Bilal génère 1.456x10<sup>-3</sup>mAs ce qui nous fait donc à peu près 5mAh.<br/> Ce résultat
+    est absolument insignifiant, rendant l'utilisation de la piezo-électricité pour alimenter des objets connectés totalement inefficace</p>
+
+<h3>Conclusion sur la piezoélectricité :</h3>
 
 <p>Nous avons vu grace à nos expériences que l'on peut en effet produire de l'énergie grâce à des cellules piezoélectriques. Cependant, elles sont trop peu efficaces afin d'être utilisées dans le cadre d'un usage personnel.<br/> Malgré cela, nous pourrions
     envisager des routes ou même un sol très féquenté bardé de cellules piezoélectriques. La contrainte mécanique d'une foule ou de plusieures voitures serait suffisante afin de recharger des objets connectés dans des points de recharge libres ou même
