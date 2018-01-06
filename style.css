@@ -226,10 +226,6 @@ section {
     clear: both;
 }
 
-#content {
-    min-height: 1000px;
-}
-
 section h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
