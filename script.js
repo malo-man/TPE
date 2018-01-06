@@ -39,10 +39,11 @@ $("#toggleDiapo").on("click", e => {
 });
 
 img();
-
+var currentPage = null;
 $("nav a").on("click", function(e) {
     e.preventDefault();
-    if ($(this).attr("href") != undefined) {
+    if ($(this).attr("href") != undefined && $(this).attr("href") != currentPage) {
+        currentPage = $(this).attr("href");
         $("#tothetop").trigger("click");
         $("#content").fadeOut(100, () => {
             $("#content").load($(this).attr("href"), () => {
@@ -77,7 +78,3 @@ $("#tothetop").on("click", (e) => {
     $('html, body').animate({ scrollTop: 0 }, 300);
 });
 $("#tothetop").trigger("click");
-
-////// PREVENT F5
-
-//$(document).on("keydown", e => { if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault(); });
