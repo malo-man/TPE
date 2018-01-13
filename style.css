@@ -303,6 +303,7 @@ hr:after {
 
 table {
     border-collapse: collapse;
+    border: 1px solid white;
     color: white;
     text-align: center;
     width: 60%;
