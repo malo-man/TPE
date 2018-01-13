@@ -335,3 +335,8 @@ table {
 #seebeckpic img {
     height: 300px;
 }
+
+#mat img {
+  height: 150px;
+  width: auto;
+}
