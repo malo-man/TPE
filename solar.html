@@ -52,7 +52,7 @@
 
         <h2>L'énergie solaire</h2>
 
-        <p>L'énergie solaire est maintenant très connue et de plus en plus utilisée. C'est une énergie renouvellable possédant un bon rendement (classique, mais efficace).<br/> Nous allons chercher à utiliser un petit panneau solaire afin d'alimenter un
+        <p>L'énergie solaire est maintenant maitrisé et de plus en plus utilisée. C'est une énergie renouvellable possédant un bon rendement (\approx 15) par apport aux autres sources d'énergie.<br/> Nous allons chercher à utiliser un petit panneau solaire afin d'alimenter un
             objet connecté, qu'il soit à l'intérieur ou à l'extérieur du batiment.<br/>
         </p>
 
@@ -66,7 +66,7 @@
 
         <h3>Expérience 1</h3>
 
-        <p>Tout d'abord, nous allons lister les tensions et les intensités mesurées avec différentes résistances mais avec le même nombre de lux, nous pourrons alors en faire des représentations graphiques.</p>
+        <p>Nous allons mesurer l'intensité et le voltage pour un éclairement fixe. Nous ferons varier la résistance da la charge avec un rhéostat.</p>
 
         <h4>Matériel :</h4>
 
@@ -76,7 +76,7 @@
             <br/>x1 voltmètre
             <br/>x1 luxmètre</p>
 
-        <p>Nous avons pu alors faire ces relevés :</p>
+        <p>Voici nos résulats :</p>
 
         <table border="1">
             <tr>
@@ -151,13 +151,13 @@
             </tr>
         </table>
 
-        <p>Concernant l'instensité en fonction de la résistance, cela nous donne le graphique suivant :</p>
+        <p>Nous exprimons l'intensité en fonction de la résistance :</p>
         <img src="graph/sol/ir.png" />
-        <p>On peut observer une augmentation progressive en fonction de la résistance</p>
-        <p>Par suite, pour la tension en fonction de la résistance, nous obtenons ceci :</p>
+        <p>Le panneau solaire est affecté par les changement de résistance, car comme U=RxI, nous aurions une droite dans le cas contraire.</p>
+        <p>Nous faisons ensuite la tension en fonction de la résistance, nous obtenons ceci :</p>
         <img src="graph/sol/tr.png" />
-        <p>On observe une diminution de la tension, ce qui est logique puisque \(U=R\times I\) et que l'intensité augmente plus lentement que la résistance baisse.</p>
-        <p>Nous pouvons ensuite refaire le même tableau en ajoutant la colonne de puissance, qui s'obtient par la simple multiplication de l'intensité et de la tension. On obtient donc le tableau suivant :</p>
+        <p>On observe une diminution de la tension, ce qui est logique puisque \(U=R\times I\) et que l'intensité augmente plus lentement que la résistance baisse mais pas de maniere linéaire. La résistance influt donc sur le voltage que peut produire un panneau solaire</p>
+        <p>Nous pouvons ensuite refaire le même tableau en ajoutant la colonne de puissance, qui s'obtient par la simple multiplication de l'intensité et de la tension (P= UxI):</p>
 
 
         <table border="1">
@@ -248,18 +248,19 @@
             </tr>
         </table>
 
-        <p>On obtient donc un graphique représentant la puissance en fonction de la résistance que voici :</p>
+        <p>Nous tracons le graphique représentant la puissance en fonction de la résistance:</p>
 
         <img src="graph/sol/pt.png" />
 
-        <p>Cela nous montre que pour des performances optimales pour alimenter un objet connecté, nous devrons régler la résistance sur 85&Omega;. C'est ce que nous ferons dans la seconde expérience.</p>
+        <p>Ce panneau solaire atteint son efficacité maximale quand la résistance sur du circuit est de 85&Omega;. Notre object connecté doit donc avoir une résistance maximal de 85&Omega; ou moins si l'on en ajoute une.</p>
+      </p>Cepandant nous ne savons pas l'évolution de la puissance en fonction de l'éclairage. C'est problématique car nous pourrions par exemple avoir un éclairage critique en dessous du quel la production d'énergie serait marginal. </p>
 
         <hr/>
 
         <h3>Expérience 2</h3>
 
-        <p>Nous allons maintenant chercher à caluler la puissance produite par la cellule en fonction du nombre de lux, nous allons évidemment placer une résistance de 85&Omega; dans le circuit pour obtenir des performances optimales. Nous allons mesurer
-            dans un premier temps la luminosité, l'intensité et la tension, puis, dans un second temps, nous calculerons la puissance.</p>
+        <p>Nous allons maintenant chercher à caluler la puissance produite par la cellule en fonction du nombre de lux. Nous allons mettre une résistance de 85&Omega; pour avoir un courant electrique plus puissant permettant de réduire les erreurs dû aux appareils.
+          Dans cette expérience nous ferons varier l'intensité lumineuse.</p>
 
         <h4>Matériel :</h4>
 
@@ -390,7 +391,7 @@
             </tr>
         </table>
 
-        <p>Nous pouvons alors tracer la courbe correspondant à la fonction qui à toute intensité lumineuse L associe une puissance P :</p>
+        <p>Nous tracons alors la courbe correspondant à la fonction qui à toute intensité lumineuse L associe une puissance P pour notre panneau solaire :</p>
 
         <img src="graph/sol/pl.png" />
 
@@ -401,7 +402,7 @@
         <h4>Le support solaire</h4>
 
         <p>Le support solaire est un support sur lequel on peut placer et brancher un objet connecté afin qu'il se charge à l'aide d'un petit panneau solaire placé sur le support; Ce support serait placé en intérieur (ou en extérieur) et alimenterait l'objet
-            avec la lumière de la pièce. il peut faire un usage personnel du moment qu'il se trouve dans une pièce avec une source de lumière suffisante (qu'elle soit naturelle ou artificielle).</p>
+            avec la lumière de la pièce. Il est interressant de noter que des object connecté sans batteries alimentées par des panneaux solaires existes deja.</p>
 
 
     </section>
