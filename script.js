@@ -39,6 +39,8 @@ $("#toggleDiapo").on("click", e => {
 });
 
 img();
+
+//// RIP AJAX >_<
 /*var currentPage = null;
 $("nav a").on("click", function(e) {
     e.preventDefault();
@@ -60,7 +62,8 @@ $("#next,#prev").fadeToggle(1);
 $("a[href='presentation.html']").trigger("click");
 
 $("#nav>ul>li").hover(function(e) {
-    $(this).children("ul").slideToggle(100);
+    e.preventDefault();
+    $(this).children("ul").fadeToggle(100);
 });
 
 
