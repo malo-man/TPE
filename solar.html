@@ -1,352 +1,418 @@
-<h2>L'énergie solaire</h2>
+<!DOCTYPE HTML>
 
-<p>L'énergie solaire est maintenant très connue et de plus en plus utilisée. C'est une énergie renouvellable possédant un bon rendement (classique, mais efficace).<br/> Nous allons chercher à utiliser un petit panneau solaire afin d'alimenter un objet connecté,
-    qu'il soit à l'intérieur ou à l'extérieur du batiment.<br/>
-</p>
+<html lang="fr">
 
-<p>
-    Le Capteur solaire permet de créer de l'énergie à partir d'une stimulation photonique d'une cellule photovoltaïque.<br/>
-</p>
+<head>
+    <meta charset="utf-8" />
+    <title>Des objets connectés autonomes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
 
-<h3>Expériences</h3>
+<body>
 
-<p>Nous allons chercher la résistance pour laquelle la puissance générée est maximale.</p>
+    <header id="header2">
 
-<h3>Expérience 1</h3>
+        <nav id="nav">
+            <h1>Des objets<br/> connectés<br/> autonomes</h1>
+            <ul id="menu">
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a>Expérimentations</a>
+                    <ul>
+                        <li><a href="solar.html">Capteur Solaire</a></li>
+                        <li><a href="piezo.html">Piezoélectricité</a></li>
+                        <li><a href="seebeck.html">L'effet seebeck</a></li>
+                    </ul>
+                </li>
+                <li><a href="journal.html">Carnet de Bord</a></li>
+                <li><a href="annexes.html">Annexes</a>
+                    <ul>
+                        <li><a href="biblio.html">Bibliographie</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="graph.html">Graphiques</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-<p>Tout d'abord, nous allons lister les tensions et les intensités mesurées avec différentes résistances mais avec le même nombre de lux, nous pourrons alors en faire des représentations graphiques.</p>
+        </nav>
 
-<h4>Matériel :</h4>
+    </header>
 
-<p>x1 cellule solaire
-    <br/>x1 réostat
-    <br/>x1 ampèremètre
-    <br/>x1 voltmètre
-    <br/>x1 luxmètre</p>
+    <section id="count">
+        <div id="prev" class="button">&lt</div>
+        <div id="toggleDiapo">Diapo</div>
+        <div id="next" class="button">&gt</div>
+        <div id="diapo">
+            <image id="image" src=""></image>
+        </div>
+    </section>
+    <hr/>
+    <section id="content">
 
-<p>Nous avons pu alors faire ces relevés :</p>
+        <h2>L'énergie solaire</h2>
 
-<table border="1">
-    <tr>
-        <th>Intensité (en mA)</th>
-        <th>Tension (en V)</th>
-        <th>Résistance (en &Omega;)</th>
-    </tr>
-    <tr>
-        <td>0,065</td>
-        <td>34</td>
-        <td>100</td>
-    </tr>
-    <tr>
-        <td>0,426</td>
-        <td>32,8</td>
-        <td>90</td>
-    </tr>
-    <tr>
-        <td>0,471</td>
-        <td>31,8</td>
-        <td>87</td>
-    </tr>
-    <tr>
-        <td>0,55</td>
-        <td>27,4</td>
-        <td>85</td>
-    </tr>
-    <tr>
-        <td>0,585</td>
-        <td>24,2</td>
-        <td>80</td>
-    </tr>
-    <tr>
-        <td>0,614</td>
-        <td>17,3</td>
-        <td>70</td>
-    </tr>
-    <tr>
-        <td>0,626</td>
-        <td>13,2</td>
-        <td>60</td>
-    </tr>
-    <tr>
-        <td>0,630</td>
-        <td>10,6</td>
-        <td>50</td>
-    </tr>
-    <tr>
-        <td>0,634</td>
-        <td>8,9</td>
-        <td>40</td>
-    </tr>
-    <tr>
-        <td>0,636</td>
-        <td>7,7</td>
-        <td>30</td>
-    </tr>
-    <tr>
-        <td>0,638</td>
-        <td>6,7</td>
-        <td>20</td>
-    </tr>
-    <tr>
-        <td>0,639</td>
-        <td>6</td>
-        <td>10</td>
-    </tr>
-    <tr>
-        <td>0,64</td>
-        <td>5,4</td>
-        <td>0</td>
-    </tr>
-</table>
+        <p>L'énergie solaire est maintenant très connue et de plus en plus utilisée. C'est une énergie renouvellable possédant un bon rendement (classique, mais efficace).<br/> Nous allons chercher à utiliser un petit panneau solaire afin d'alimenter un
+            objet connecté, qu'il soit à l'intérieur ou à l'extérieur du batiment.<br/>
+        </p>
 
-<p>Concernant l'instensité en fonction de la résistance, cela nous donne le graphique suivant :</p>
-<img src="graph/sol/ir.png" />
-<p>On peut observer une augmentation progressive en fonction de la résistance</p>
-<p>Par suite, pour la tension en fonction de la résistance, nous obtenons ceci :</p>
-<img src="graph/sol/tr.png" />
-<p>On observe une diminution de la tension, ce qui est logique puisque U=RxI et que l'intensité augmente plus lentement que la résistance baisse.</p>
-<p>Nous pouvons ensuite refaire le même tableau en ajoutant la colonne de puissance, qui s'obtient par la simple multiplication de l'intensité et de la tension. On obtient donc le tableau suivant :</p>
+        <p>
+            Le Capteur solaire permet de créer de l'énergie à partir d'une stimulation photonique d'une cellule photovoltaïque.<br/>
+        </p>
+
+        <h3>Expériences</h3>
+
+        <p>Nous allons chercher la résistance pour laquelle la puissance générée est maximale.</p>
+
+        <h3>Expérience 1</h3>
+
+        <p>Tout d'abord, nous allons lister les tensions et les intensités mesurées avec différentes résistances mais avec le même nombre de lux, nous pourrons alors en faire des représentations graphiques.</p>
+
+        <h4>Matériel :</h4>
+
+        <p>x1 cellule solaire
+            <br/>x1 réostat
+            <br/>x1 ampèremètre
+            <br/>x1 voltmètre
+            <br/>x1 luxmètre</p>
+
+        <p>Nous avons pu alors faire ces relevés :</p>
+
+        <table border="1">
+            <tr>
+                <th>Intensité (en mA)</th>
+                <th>Tension (en V)</th>
+                <th>Résistance (en &Omega;)</th>
+            </tr>
+            <tr>
+                <td>0,065</td>
+                <td>34</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>0,426</td>
+                <td>32,8</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>0,471</td>
+                <td>31,8</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>0,55</td>
+                <td>27,4</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>0,585</td>
+                <td>24,2</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>0,614</td>
+                <td>17,3</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>0,626</td>
+                <td>13,2</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>0,630</td>
+                <td>10,6</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>0,634</td>
+                <td>8,9</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>0,636</td>
+                <td>7,7</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>0,638</td>
+                <td>6,7</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>0,639</td>
+                <td>6</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>0,64</td>
+                <td>5,4</td>
+                <td>0</td>
+            </tr>
+        </table>
+
+        <p>Concernant l'instensité en fonction de la résistance, cela nous donne le graphique suivant :</p>
+        <img src="graph/sol/ir.png" />
+        <p>On peut observer une augmentation progressive en fonction de la résistance</p>
+        <p>Par suite, pour la tension en fonction de la résistance, nous obtenons ceci :</p>
+        <img src="graph/sol/tr.png" />
+        <p>On observe une diminution de la tension, ce qui est logique puisque U=RxI et que l'intensité augmente plus lentement que la résistance baisse.</p>
+        <p>Nous pouvons ensuite refaire le même tableau en ajoutant la colonne de puissance, qui s'obtient par la simple multiplication de l'intensité et de la tension. On obtient donc le tableau suivant :</p>
 
 
-<table border="1">
-    <tr>
-        <th>Puissance (en W)</th>
-        <th>Intensité (en mA)</th>
-        <th>Tension (en V)</th>
-        <th>Résistance (en &Omega;)</th>
-    </tr>
+        <table border="1">
+            <tr>
+                <th>Puissance (en W)</th>
+                <th>Intensité (en mA)</th>
+                <th>Tension (en V)</th>
+                <th>Résistance (en &Omega;)</th>
+            </tr>
 
-    <tr>
-        <td>0,00221</td>
-        <td>0,065</td>
-        <td>34</td>
-        <td>100</td>
-    </tr>
-    <tr>
-        <td>0,0139728</td>
-        <td>0,426</td>
-        <td>32,8</td>
-        <td>90</td>
-    </tr>
-    <tr>
-        <td>0,0149778</td>
-        <td>0,471</td>
-        <td>31,8</td>
-        <td>87</td>
-    </tr>
-    <tr>
-        <td>0,01507</td>
-        <td>0,55</td>
-        <td>27,4</td>
-        <td>85</td>
-    </tr>
-    <tr>
-        <td>0,014157</td>
-        <td>0,585</td>
-        <td>24,2</td>
-        <td>80</td>
-    </tr>
-    <tr>
-        <td>0,0106222</td>
-        <td>0,614</td>
-        <td>17,3</td>
-        <td>70</td>
-    </tr>
-    <tr>
-        <td>0,0082632</td>
-        <td>0,626</td>
-        <td>13,2</td>
-        <td>60</td>
-    </tr>
-    <tr>
-        <td>0,006678</td>
-        <td>0,630</td>
-        <td>10,6</td>
-        <td>50</td>
-    </tr>
-    <tr>
-        <td>0,0056426</td>
-        <td>0,634</td>
-        <td>8,9</td>
-        <td>40</td>
-    </tr>
-    <tr>
-        <td>0,0048972</td>
-        <td>0,636</td>
-        <td>7,7</td>
-        <td>30</td>
-    </tr>
-    <tr>
-        <td>0,0042746</td>
-        <td>0,638</td>
-        <td>6,7</td>
-        <td>20</td>
-    </tr>
-    <tr>
-        <td>0,003834</td>
-        <td>0,639</td>
-        <td>6</td>
-        <td>10</td>
-    </tr>
-    <tr>
-        <td>0,003456</td>
-        <td>0,64</td>
-        <td>5,4</td>
-        <td>0</td>
-    </tr>
-</table>
+            <tr>
+                <td>0,00221</td>
+                <td>0,065</td>
+                <td>34</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>0,0139728</td>
+                <td>0,426</td>
+                <td>32,8</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>0,0149778</td>
+                <td>0,471</td>
+                <td>31,8</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>0,01507</td>
+                <td>0,55</td>
+                <td>27,4</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>0,014157</td>
+                <td>0,585</td>
+                <td>24,2</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>0,0106222</td>
+                <td>0,614</td>
+                <td>17,3</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>0,0082632</td>
+                <td>0,626</td>
+                <td>13,2</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>0,006678</td>
+                <td>0,630</td>
+                <td>10,6</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>0,0056426</td>
+                <td>0,634</td>
+                <td>8,9</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>0,0048972</td>
+                <td>0,636</td>
+                <td>7,7</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>0,0042746</td>
+                <td>0,638</td>
+                <td>6,7</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>0,003834</td>
+                <td>0,639</td>
+                <td>6</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>0,003456</td>
+                <td>0,64</td>
+                <td>5,4</td>
+                <td>0</td>
+            </tr>
+        </table>
 
-<p>On obtient donc un graphique représentant la puissance en fonction de la résistance que voici :</p>
+        <p>On obtient donc un graphique représentant la puissance en fonction de la résistance que voici :</p>
 
-<img src="graph/sol/pt.png" />
+        <img src="graph/sol/pt.png" />
 
-<p>Cela nous montre que pour des performances optimales pour alimenter un objet connecté, nous devrons régler la résistance sur 85&Omega;. C'est ce que nous ferons dans la seconde expérience.</p>
+        <p>Cela nous montre que pour des performances optimales pour alimenter un objet connecté, nous devrons régler la résistance sur 85&Omega;. C'est ce que nous ferons dans la seconde expérience.</p>
 
-<hr/>
+        <hr/>
 
-<h3>Expérience 2</h3>
+        <h3>Expérience 2</h3>
 
-<p>Nous allons maintenant chercher à caluler la puissance produite par la cellule en fonction du nombre de lux, nous allons évidemment placer une résistance de 85&Omega; dans le circuit pour obtenir des performances optimales. Nous allons mesurer dans un
-    premier temps la luminosité, l'intensité et la tension, puis, dans un second temps, nous calculerons la puissance.</p>
+        <p>Nous allons maintenant chercher à caluler la puissance produite par la cellule en fonction du nombre de lux, nous allons évidemment placer une résistance de 85&Omega; dans le circuit pour obtenir des performances optimales. Nous allons mesurer
+            dans un premier temps la luminosité, l'intensité et la tension, puis, dans un second temps, nous calculerons la puissance.</p>
 
-<h4>Matériel :</h4>
+        <h4>Matériel :</h4>
 
-<p>x1 cellule solaire
-    <br/>x1 réostat
-    <br/>x1 ampèremètre
-    <br/>x1 voltmètre
-    <br/>x1 luxmètre</p>
+        <p>x1 cellule solaire
+            <br/>x1 réostat
+            <br/>x1 ampèremètre
+            <br/>x1 voltmètre
+            <br/>x1 luxmètre</p>
 
-<p>Nous avons pu alors faire ces relevés :</p>
+        <p>Nous avons pu alors faire ces relevés :</p>
 
-<table border="1">
-    <tr>
-        <th>Tension (en V)</th>
-        <th>Intensité (en mA)</th>
-        <th>Intensité Lumineuse (en Lux)</th>
-    </tr>
-    <tr>
-        <td>0,27</td>
-        <td>16,5</td>
-        <td>620</td>
-    </tr>
-    <tr>
-        <td>0,274</td>
-        <td>17</td>
-        <td>670</td>
-    </tr>
-    <tr>
-        <td>0,307</td>
-        <td>19,3</td>
-        <td>790</td>
-    </tr>
-    <tr>
-        <td>0,383</td>
-        <td>23,5</td>
-        <td>1070</td>
-    </tr>
-    <tr>
-        <td>0,438</td>
-        <td>26,8</td>
-        <td>1410</td>
-    </tr>
-    <tr>
-        <td>0,456</td>
-        <td>28,3</td>
-        <td>1760</td>
-    </tr>
-    <tr>
-        <td>0,487</td>
-        <td>30,3</td>
-        <td>2830</td>
-    </tr>
-    <tr>
-        <td>0,493</td>
-        <td>30,7</td>
-        <td>3250</td>
-    </tr>
-</table>
+        <table border="1">
+            <tr>
+                <th>Tension (en V)</th>
+                <th>Intensité (en mA)</th>
+                <th>Intensité Lumineuse (en Lux)</th>
+            </tr>
+            <tr>
+                <td>0,27</td>
+                <td>16,5</td>
+                <td>620</td>
+            </tr>
+            <tr>
+                <td>0,274</td>
+                <td>17</td>
+                <td>670</td>
+            </tr>
+            <tr>
+                <td>0,307</td>
+                <td>19,3</td>
+                <td>790</td>
+            </tr>
+            <tr>
+                <td>0,383</td>
+                <td>23,5</td>
+                <td>1070</td>
+            </tr>
+            <tr>
+                <td>0,438</td>
+                <td>26,8</td>
+                <td>1410</td>
+            </tr>
+            <tr>
+                <td>0,456</td>
+                <td>28,3</td>
+                <td>1760</td>
+            </tr>
+            <tr>
+                <td>0,487</td>
+                <td>30,3</td>
+                <td>2830</td>
+            </tr>
+            <tr>
+                <td>0,493</td>
+                <td>30,7</td>
+                <td>3250</td>
+            </tr>
+        </table>
 
-<p>On peut donc tracer la courbe représentant la fonction qui à toute intensité lumineuse L associe une tension :</p>
+        <p>On peut donc tracer la courbe représentant la fonction qui à toute intensité lumineuse L associe une tension :</p>
 
-<img src="graph/sol/tl.png" />
+        <img src="graph/sol/tl.png" />
 
-<p>On observe que la Tension augmente avec l'intensité lumineuse.</p>
+        <p>On observe que la Tension augmente avec l'intensité lumineuse.</p>
 
-<p>Ensuite, on peut tracer la courbe de la fonction qui à toute intensité lumineuse L associe une intensité :</p>
+        <p>Ensuite, on peut tracer la courbe de la fonction qui à toute intensité lumineuse L associe une intensité :</p>
 
-<img src="graph/sol/il.png" />
+        <img src="graph/sol/il.png" />
 
-<p>De même que la tension, l'intensité du courant augmente proportionellement à l'intensité lumineuse.</p>
+        <p>De même que la tension, l'intensité du courant augmente proportionellement à l'intensité lumineuse.</p>
 
-<p>Après calcul de la puissance, nous obtenons le tableau suivant :</p>
+        <p>Après calcul de la puissance, nous obtenons le tableau suivant :</p>
 
-<table border="1">
-    <tr>
-        <th>Tension (en V)</th>
-        <th>Intensité (en mA)</th>
-        <th>Intensité Lumineuse (en Lux)</th>
-        <th>Puissance (en W)</th>
-    </tr>
-    <tr>
-        <td>0,27</td>
-        <td>16,5</td>
-        <td>620</td>
-        <td>4,455</td>
-    </tr>
-    <tr>
-        <td>0,274</td>
-        <td>17</td>
-        <td>670</td>
-        <td>4,658</td>
-    </tr>
-    <tr>
-        <td>0,307</td>
-        <td>19,3</td>
-        <td>790</td>
-        <td>5,9251</td>
-    </tr>
-    <tr>
-        <td>0,383</td>
-        <td>23,5</td>
-        <td>1070</td>
-        <td>9,0005</td>
-    </tr>
-    <tr>
-        <td>0,438</td>
-        <td>26,8</td>
-        <td>1410</td>
-        <td>11,7384</td>
-    </tr>
-    <tr>
-        <td>0,456</td>
-        <td>28,3</td>
-        <td>1760</td>
-        <td>12,9048</td>
-    </tr>
-    <tr>
-        <td>0,487</td>
-        <td>30,3</td>
-        <td>2830</td>
-        <td>14,7561</td>
-    </tr>
-    <tr>
-        <td>0,493</td>
-        <td>30,7</td>
-        <td>3250</td>
-        <td>15,1351</td>
-    </tr>
-</table>
+        <table border="1">
+            <tr>
+                <th>Tension (en V)</th>
+                <th>Intensité (en mA)</th>
+                <th>Intensité Lumineuse (en Lux)</th>
+                <th>Puissance (en W)</th>
+            </tr>
+            <tr>
+                <td>0,27</td>
+                <td>16,5</td>
+                <td>620</td>
+                <td>4,455</td>
+            </tr>
+            <tr>
+                <td>0,274</td>
+                <td>17</td>
+                <td>670</td>
+                <td>4,658</td>
+            </tr>
+            <tr>
+                <td>0,307</td>
+                <td>19,3</td>
+                <td>790</td>
+                <td>5,9251</td>
+            </tr>
+            <tr>
+                <td>0,383</td>
+                <td>23,5</td>
+                <td>1070</td>
+                <td>9,0005</td>
+            </tr>
+            <tr>
+                <td>0,438</td>
+                <td>26,8</td>
+                <td>1410</td>
+                <td>11,7384</td>
+            </tr>
+            <tr>
+                <td>0,456</td>
+                <td>28,3</td>
+                <td>1760</td>
+                <td>12,9048</td>
+            </tr>
+            <tr>
+                <td>0,487</td>
+                <td>30,3</td>
+                <td>2830</td>
+                <td>14,7561</td>
+            </tr>
+            <tr>
+                <td>0,493</td>
+                <td>30,7</td>
+                <td>3250</td>
+                <td>15,1351</td>
+            </tr>
+        </table>
 
-<p>Nous pouvons alors tracer la courbe correspondant à la fonction qui à toute intensité lumineuse L associe une puissance P :</p>
+        <p>Nous pouvons alors tracer la courbe correspondant à la fonction qui à toute intensité lumineuse L associe une puissance P :</p>
 
-<img src="graph/sol/pl.png" />
+        <img src="graph/sol/pl.png" />
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 
-<h3>Applications :</h3>
+        <h3>Applications :</h3>
 
-<h4>Le support solaire</h4>
+        <h4>Le support solaire</h4>
 
-<p>Le support solaire est un support sur lequel on peut placer et brancher un objet connecté afin qu'il se charge à l'aide d'un petit panneau solaire placé sur le support; Ce support serait placé en intérieur (ou en extérieur) et alimenterait l'objet avec
-    la lumière de la pièce. il peut faire un usage personnel du moment qu'il se trouve dans une pièce avec une source de lumière suffisante (qu'elle soit naturelle ou artificielle).</p>
+        <p>Le support solaire est un support sur lequel on peut placer et brancher un objet connecté afin qu'il se charge à l'aide d'un petit panneau solaire placé sur le support; Ce support serait placé en intérieur (ou en extérieur) et alimenterait l'objet
+            avec la lumière de la pièce. il peut faire un usage personnel du moment qu'il se trouve dans une pièce avec une source de lumière suffisante (qu'elle soit naturelle ou artificielle).</p>
+
+
+    </section>
+    <hr/>
+    <footer>
+        <p>
+            Bilal Molli - Barthélémy Paléologue - Malo Le Reste<br/> 1<sup>è</sup>Se, Loquidy<br/>
+        </p>
+    </footer>
+    <div id="tothetop"><img src="tothetop.png" title="Vers le haut de la page" /></div>
+</body>
+<script src="script.js"></script>
+
+</html>

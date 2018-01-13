@@ -1,91 +1,155 @@
-<h3>Photos</h3>
+<!DOCTYPE HTML>
 
-<h4>Capteur Solaire</h4>
-<div id="solpic">
-    <img src="data/sol/1.jpg" />
-    <img src="data/sol/2.jpg" />
-    <img src="data/sol/3.jpg" />
-    <img src="data/sol/4.jpg" />
-    <img src="data/sol/5.jpg" />
-    <img src="data/sol/6.jpg" />
-    <img src="data/sol/7.jpg" />
-    <img src="data/sol/8.jpg" />
-    <img src="data/sol/9.jpg" />
-    <img src="data/sol/10.jpg" />
-    <img src="data/sol/11.jpg" />
-    <img src="data/sol/12.jpg" />
-    <img src="data/sol/13.jpg" />
-    <img src="data/sol/14.jpg" />
-    <img src="data/sol/15.jpg" />
-    <img src="data/sol/16.jpg" />
-    <img src="data/sol/17.jpg" />
-    <img src="data/sol/18.jpg" />
-    <img src="data/sol/19.jpg" />
-    <img src="data/sol/20.jpg" />
-</div>
+<html lang="fr">
 
-<h4>Piezoélectricité</h4>
+<head>
+    <meta charset="utf-8" />
+    <title>Des objets connectés autonomes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
 
-<div id="piezopic">
-    <img src="data/piezo/1.jpg" />
-    <img src="data/piezo/2.jpg" />
-    <img src="data/piezo/3.jpg" />
-    <img src="data/piezo/4.jpg" />
-    <img src="data/piezo/5.jpg" />
-    <img src="data/piezo/6.jpg" />
-    <img src="data/piezo/7.jpg" />
-    <img src="data/piezo/8.jpg" />
-    <img src="data/piezo/9.jpg" />
-    <img src="data/piezo/10.jpg" />
-    <img src="data/piezo/11.jpg" />
-    <img src="data/piezo/12.jpg" />
-    <img src="data/piezo/latis.jpg" />
-    <img src="data/piezo/piezo.jpg" />
-    <img src="data/piezo/scotch.jpg" />
-</div>
+<body>
+
+    <header id="header2">
+
+        <nav id="nav">
+            <h1>Des objets<br/> connectés<br/> autonomes</h1>
+            <ul id="menu">
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a>Expérimentations</a>
+                    <ul>
+                        <li><a href="solar.html">Capteur Solaire</a></li>
+                        <li><a href="piezo.html">Piezoélectricité</a></li>
+                        <li><a href="seebeck.html">L'effet seebeck</a></li>
+                    </ul>
+                </li>
+                <li><a href="journal.html">Carnet de Bord</a></li>
+                <li><a href="annexes.html">Annexes</a>
+                    <ul>
+                        <li><a href="biblio.html">Bibliographie</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="graph.html">Graphiques</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section id="count">
+        <div id="prev" class="button">&lt</div>
+        <div id="toggleDiapo">Diapo</div>
+        <div id="next" class="button">&gt</div>
+        <div id="diapo">
+            <image id="image" src=""></image>
+        </div>
+    </section>
+    <hr/>
+    <section id="content">
+
+        <h3>Photos</h3>
+
+        <h4>Capteur Solaire</h4>
+        <div id="solpic">
+            <img src="data/sol/1.jpg" />
+            <img src="data/sol/2.jpg" />
+            <img src="data/sol/3.jpg" />
+            <img src="data/sol/4.jpg" />
+            <img src="data/sol/5.jpg" />
+            <img src="data/sol/6.jpg" />
+            <img src="data/sol/7.jpg" />
+            <img src="data/sol/8.jpg" />
+            <img src="data/sol/9.jpg" />
+            <img src="data/sol/10.jpg" />
+            <img src="data/sol/11.jpg" />
+            <img src="data/sol/12.jpg" />
+            <img src="data/sol/13.jpg" />
+            <img src="data/sol/14.jpg" />
+            <img src="data/sol/15.jpg" />
+            <img src="data/sol/16.jpg" />
+            <img src="data/sol/17.jpg" />
+            <img src="data/sol/18.jpg" />
+            <img src="data/sol/19.jpg" />
+            <img src="data/sol/20.jpg" />
+        </div>
+
+        <h4>Piezoélectricité</h4>
+
+        <div id="piezopic">
+            <img src="data/piezo/1.jpg" />
+            <img src="data/piezo/2.jpg" />
+            <img src="data/piezo/3.jpg" />
+            <img src="data/piezo/4.jpg" />
+            <img src="data/piezo/5.jpg" />
+            <img src="data/piezo/6.jpg" />
+            <img src="data/piezo/7.jpg" />
+            <img src="data/piezo/8.jpg" />
+            <img src="data/piezo/9.jpg" />
+            <img src="data/piezo/10.jpg" />
+            <img src="data/piezo/11.jpg" />
+            <img src="data/piezo/12.jpg" />
+            <img src="data/piezo/latis.jpg" />
+            <img src="data/piezo/piezo.jpg" />
+            <img src="data/piezo/scotch.jpg" />
+        </div>
 
 
 
-<h4>Effet Seebeck</h4>
+        <h4>Effet Seebeck</h4>
 
-<div id="seebeckpic">
-    <img src="data/seebeck/1.jpg" />
-    <img src="data/seebeck/2.jpg" />
-    <img src="data/seebeck/3.jpg" />
-    <img src="data/seebeck/4.jpg" />
-    <img src="data/seebeck/5.jpg" />
-    <img src="data/seebeck/6.jpg" />
-    <img src="data/seebeck/7.jpg" />
-    <img src="data/seebeck/8.jpg" />
-    <img src="data/seebeck/9.jpg" />
-    <img src="data/seebeck/10.jpg" />
-    <img src="data/seebeck/11.jpg" />
-    <img src="data/seebeck/12.jpg" />
-    <img src="data/seebeck/13.jpg" />
-    <img src="data/seebeck/14.jpg" />
-    <img src="data/seebeck/15.jpg" />
-    <img src="data/seebeck/16.jpg" />
-    <img src="data/seebeck/17.jpg" />
-    <img src="data/seebeck/18.jpg" />
-    <img src="data/seebeck/19.jpg" />
-    <img src="data/seebeck/20.jpg" />
-    <img src="data/seebeck/21.jpg" />
-    <img src="data/seebeck/22.jpg" />
-    <img src="data/seebeck/23.jpg" />
-    <img src="data/seebeck/24.jpg" />
-    <img src="data/seebeck/25.jpg" />
-    <img src="data/seebeck/26.jpg" />
-    <img src="data/seebeck/27.jpg" />
-    <img src="data/seebeck/28.jpg" />
-    <img src="data/seebeck/29.jpg" />
-    <img src="data/seebeck/30.jpg" />
-    <img src="data/seebeck/31.jpg" />
-    <img src="data/seebeck/32.jpg" />
-    <img src="data/seebeck/33.jpg" />
-    <img src="data/seebeck/34.jpg" />
-    <img src="data/seebeck/35.jpg" />
-    <img src="data/seebeck/36.jpg" />
-    <img src="data/seebeck/37.jpg" />
-    <img src="data/seebeck/mesureseebeck.jpg" />
-    <img src="data/seebeck/seebeck.jpg" />
-</div>
+        <div id="seebeckpic">
+            <img src="data/seebeck/1.jpg" />
+            <img src="data/seebeck/2.jpg" />
+            <img src="data/seebeck/3.jpg" />
+            <img src="data/seebeck/4.jpg" />
+            <img src="data/seebeck/5.jpg" />
+            <img src="data/seebeck/6.jpg" />
+            <img src="data/seebeck/7.jpg" />
+            <img src="data/seebeck/8.jpg" />
+            <img src="data/seebeck/9.jpg" />
+            <img src="data/seebeck/10.jpg" />
+            <img src="data/seebeck/11.jpg" />
+            <img src="data/seebeck/12.jpg" />
+            <img src="data/seebeck/13.jpg" />
+            <img src="data/seebeck/14.jpg" />
+            <img src="data/seebeck/15.jpg" />
+            <img src="data/seebeck/16.jpg" />
+            <img src="data/seebeck/17.jpg" />
+            <img src="data/seebeck/18.jpg" />
+            <img src="data/seebeck/19.jpg" />
+            <img src="data/seebeck/20.jpg" />
+            <img src="data/seebeck/21.jpg" />
+            <img src="data/seebeck/22.jpg" />
+            <img src="data/seebeck/23.jpg" />
+            <img src="data/seebeck/24.jpg" />
+            <img src="data/seebeck/25.jpg" />
+            <img src="data/seebeck/26.jpg" />
+            <img src="data/seebeck/27.jpg" />
+            <img src="data/seebeck/28.jpg" />
+            <img src="data/seebeck/29.jpg" />
+            <img src="data/seebeck/30.jpg" />
+            <img src="data/seebeck/31.jpg" />
+            <img src="data/seebeck/32.jpg" />
+            <img src="data/seebeck/33.jpg" />
+            <img src="data/seebeck/34.jpg" />
+            <img src="data/seebeck/35.jpg" />
+            <img src="data/seebeck/36.jpg" />
+            <img src="data/seebeck/37.jpg" />
+            <img src="data/seebeck/mesureseebeck.jpg" />
+            <img src="data/seebeck/seebeck.jpg" />
+        </div>
+    </section>
+    <hr/>
+    <footer>
+        <p>
+            Bilal Molli - Barthélémy Paléologue - Malo Le Reste<br/> 1<sup>è</sup>Se, Loquidy<br/>
+        </p>
+    </footer>
+    <div id="tothetop"><img src="tothetop.png" title="Vers le haut de la page" /></div>
+</body>
+<script src="script.js"></script>
+
+</html>

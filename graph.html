@@ -1,32 +1,97 @@
-<h3>Graphiques</h3>
+<!DOCTYPE HTML>
 
-<h4>Capteur Solaire</h4>
-<div id="solpic">
-    <img src="graph/sol/il.png" />
-    <img src="graph/sol/ir.png" />
-    <img src="graph/sol/pl.png" />
-    <img src="graph/sol/pt.png" />
-    <img src="graph/sol/tl.png" />
-    <img src="graph/sol/tr.png" />
-</div>
+<html lang="fr">
 
-<h4>Piezoélectricité</h4>
+<head>
+    <meta charset="utf-8" />
+    <title>Des objets connectés autonomes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
 
-<div id="piezopic">
-    <img src="graph/piezo/voltmarche1_milieu.jpg" />
-    <img src="graph/piezo/voltmarche2_devant.jpg" />
-    <img src="graph/piezo/voltmarche3_arriere.jpg" />
-    <img src="graph/piezo/voltmarche4_interne.jpg" />
-    <img src="graph/piezo/graph.jpg" />
-</div>
+<body>
+
+    <header id="header2">
+
+        <nav id="nav">
+            <h1>Des objets<br/> connectés<br/> autonomes</h1>
+            <ul id="menu">
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a>Expérimentations</a>
+                    <ul>
+                        <li><a href="solar.html">Capteur Solaire</a></li>
+                        <li><a href="piezo.html">Piezoélectricité</a></li>
+                        <li><a href="seebeck.html">L'effet seebeck</a></li>
+                    </ul>
+                </li>
+                <li><a href="journal.html">Carnet de Bord</a></li>
+                <li><a href="annexes.html">Annexes</a>
+                    <ul>
+                        <li><a href="biblio.html">Bibliographie</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="graph.html">Graphiques</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section id="count">
+        <div id="prev" class="button">&lt</div>
+        <div id="toggleDiapo">Diapo</div>
+        <div id="next" class="button">&gt</div>
+        <div id="diapo">
+            <image id="image" src=""></image>
+        </div>
+    </section>
+    <hr/>
+    <section id="content">
+
+        <h3>Graphiques</h3>
+
+        <h4>Capteur Solaire</h4>
+        <div id="solpic">
+            <img src="graph/sol/il.png" />
+            <img src="graph/sol/ir.png" />
+            <img src="graph/sol/pl.png" />
+            <img src="graph/sol/pt.png" />
+            <img src="graph/sol/tl.png" />
+            <img src="graph/sol/tr.png" />
+        </div>
+
+        <h4>Piezoélectricité</h4>
+
+        <div id="piezopic">
+            <img src="graph/piezo/voltmarche1_milieu.jpg" />
+            <img src="graph/piezo/voltmarche2_devant.jpg" />
+            <img src="graph/piezo/voltmarche3_arriere.jpg" />
+            <img src="graph/piezo/voltmarche4_interne.jpg" />
+            <img src="graph/piezo/graph.jpg" />
+        </div>
 
 
 
-<h4>Effet Seebeck</h4>
+        <h4>Effet Seebeck</h4>
 
-<div id="seebeckpic">
-    <img src="graph/seebeck/dtu.png" />
-    <img src="graph/seebeck/pdt.png" />
-    <img src="graph/seebeck/pu.png" />
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+        <div id="seebeckpic">
+            <img src="graph/seebeck/dtu.png" />
+            <img src="graph/seebeck/pdt.png" />
+            <img src="graph/seebeck/pu.png" />
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+    </section>
+    <hr/>
+    <footer>
+        <p>
+            Bilal Molli - Barthélémy Paléologue - Malo Le Reste<br/> 1<sup>è</sup>Se, Loquidy<br/>
+        </p>
+    </footer>
+    <div id="tothetop"><img src="tothetop.png" title="Vers le haut de la page" /></div>
+</body>
+<script src="script.js"></script>
+
+</html>

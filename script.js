@@ -39,7 +39,7 @@ $("#toggleDiapo").on("click", e => {
 });
 
 img();
-var currentPage = null;
+/*var currentPage = null;
 $("nav a").on("click", function(e) {
     e.preventDefault();
     if ($(this).attr("href") != undefined && $(this).attr("href") != currentPage) {
@@ -51,7 +51,7 @@ $("nav a").on("click", function(e) {
             });
         });
     }
-});
+});*/
 
 $("#toggleDiapo").trigger("click");
 $("a[href='presentation.html']").trigger("click");

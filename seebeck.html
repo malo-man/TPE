@@ -1,102 +1,168 @@
-<h2>L'effet Seebek</h2>
+<!DOCTYPE HTML>
 
-<p>
-    Le module à effet Seebeck permet de produire de l'énergie à partir d'une différence de température entre les deux faces du module. La face exposée à la plus grande température absorbe la chaleur et l'autre la rejette, ce processus génère un peu d'énergie
-    que l'on peut récupérer.<br/> On peut aussi alimenter le module, il absorbera la chaleur d'un coté et la rejettera de l'autre en fonction du sens du courant. Cependant, ce n'est pas ce que l'on cherche à faire ici (on veut récupérer de l'énergie,
-    pas l'utiliser).<br/>
-</p>
+<html lang="fr">
 
-<h3>Expériences</h3>
+<head>
+    <meta charset="utf-8" />
+    <title>Des objets connectés autonomes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
 
-<h3>Expérience 1</h3>
+<body>
 
-<p>Nous allons chercher une fonction qui à toute différence de température &Delta;T en Kelvin associe une tension U en Volt</p>
+    <header id="header2">
 
-<h4>Matériel :</h4>
+        <nav id="nav">
+            <h1>Des objets<br/> connectés<br/> autonomes</h1>
+            <ul id="menu">
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a>Expérimentations</a>
+                    <ul>
+                        <li><a href="solar.html">Capteur Solaire</a></li>
+                        <li><a href="piezo.html">Piezoélectricité</a></li>
+                        <li><a href="seebeck.html">L'effet seebeck</a></li>
+                    </ul>
+                </li>
+                <li><a href="journal.html">Carnet de Bord</a></li>
+                <li><a href="annexes.html">Annexes</a>
+                    <ul>
+                        <li><a href="biblio.html">Bibliographie</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="graph.html">Graphiques</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-<p>x1 Chauffage<br/> x1 Module à effet Seebeck<br/> x1 bécher<br/> De l’eau du robinet<br/> x1 multimètre<br/> x1 dissipateur thermique (puissance max dissipée 65W) => Ventirad de PC<br/> x1 résistance de 10Ω
-</p>
+        </nav>
 
-<h4>Protocol Expérimental :</h4>
+    </header>
 
-<p>On fait chauffer de l’eau dans un bécher jusqu’à une température plus élevée que celle du milieu ambiant. Ensuite on immerge partiellement une face du module Seebeck dans l’eau pour faire chauffer l’une de ses deux faces. On utilise le dissipateur thermique
-    pour refroidir l’autre face du Seebeck. De cette différence de température naît ainsi un courant électrique. Nous établissons alors un tableau qui, à toute différence de température &Delta;T, associe la tension U spécifiée en circuit ouvert. Nous
-    pouvons alors tracer un graphique de ces résultats. Il en résulte une droite passant par l’origine, dont nous pouvons calculer le coefficient directeur appelé coefficient Seebeck. Par la suite, nous pouvons brancher le module en série avec une résistance
-    de 10Ω, et grâce à la relation U=RxI , en déduire l’intensité parcourant le circuit.
-</p>
+    <section id="count">
+        <div id="prev" class="button">&lt</div>
+        <div id="toggleDiapo">Diapo</div>
+        <div id="next" class="button">&gt</div>
+        <div id="diapo">
+            <image id="image" src=""></image>
+        </div>
+    </section>
+    <hr/>
+    <section id="content">
 
-<h4>Montage :</h4>
-<p>
-    <img height="400px" src="data/seebeck/seebeck.jpg" />
-    <img height="400px" src="data/seebeck/mesureseebeck.jpg" /></p>
+        <h2>L'effet Seebek</h2>
 
-<h4>Résultats :</h4>
-<table border="1">
-    <tr>
-        <th>&Delta;t (en K)</th>
-        <th>U (en V)</th>
-        <tr>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>0,21</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>0,24</td>
-        </tr>
-        <tr>
-            <td>14,2</td>
-            <td>0,43</td>
-        </tr>
-        <tr>
-            <td>18</td>
-            <td>0,55</td>
-        </tr>
-        <tr>
-            <td>25</td>
-            <td>0,75</td>
-        </tr>
-        <tr>
-            <td>27,2</td>
-            <td>0,84</td>
-        </tr>
-        <tr>
-            <td>30</td>
-            <td>0,82</td>
-        </tr>
-</table>
-<p><img src="graph/seebeck/dtu.png" /></p>
+        <p>
+            Le module à effet Seebeck permet de produire de l'énergie à partir d'une différence de température entre les deux faces du module. La face exposée à la plus grande température absorbe la chaleur et l'autre la rejette, ce processus génère un peu d'énergie
+            que l'on peut récupérer.<br/> On peut aussi alimenter le module, il absorbera la chaleur d'un coté et la rejettera de l'autre en fonction du sens du courant. Cependant, ce n'est pas ce que l'on cherche à faire ici (on veut récupérer
+            de l'énergie, pas l'utiliser).<br/>
+        </p>
 
-<hr/>
+        <h3>Expériences</h3>
 
-<h3>Expérience 2</h3>
+        <h3>Expérience 1</h3>
 
-<p>Nous allons chercher à calculer la résistance interne du module à effet Seebeck, cela nous aidera à trouver une fonction qui à toute tension U en Volt associe une intensité I en Ampère.</p>
+        <p>Nous allons chercher une fonction qui à toute différence de température &Delta;T en Kelvin associe une tension U en Volt</p>
 
-<h4>Protocole Expérimental :</h4>
+        <h4>Matériel :</h4>
 
-<p>Nous refaisons le montage précédent en ajoutant un ampèremètre en série dans le circuit ainsi qu’une résistance de 10Ω. Nous allons calculer la résistance interne du module à effet Seebeck, ce qui nous permettra de trouver une fonction qui à toute tension
-    U associe une intensité I. Nous utiliserons la relation U = R x I. Résultats : On sait que R=10+X où X représente la résistance interne du module à effet Seebeck et 10 la résistance déjà présente dans le circuit. De plus, nous pouvons mesurer l’intensité
-    avec l’ampèremètre et la tension avec le voltmètre. On en déduit les relations suivantes : I = U/R ⇔ I = U/(10+X) ⇔ X=U/I-10 Ensuite, nous relevons la tension aux bornes du module et l’intensité du courant dans le circuit, on trouve : I = 0,019A et
-    U= 0,36V On en déduit la résistance interne du module à effet Seebeck qui est donc de 8.37Ω. La résistance totale du circuit est donc de 10+8.37 soit 18.37Ω. Comme I=U/R, et que R est constant, nous avons trouvé la fonction qui à toute tension mesurée
-    au bornes du module à effet Seebeck associe une intensité électrique. Il s'agit de la fonction f(U) = U/18.37<br/> On en déduit alors la fonction qui à tout I et U associe P : f(I,U) = IxU = (1/18.37)xUxU = U
-    <sup>2</sup>/18.37</p>
+        <p>x1 Chauffage<br/> x1 Module à effet Seebeck<br/> x1 bécher<br/> De l’eau du robinet<br/> x1 multimètre<br/> x1 dissipateur thermique (puissance max dissipée 65W) => Ventirad de PC<br/> x1 résistance de 10Ω
+        </p>
 
-<p><img src="graph/seebeck/pu.png" /></p>
+        <h4>Protocol Expérimental :</h4>
+
+        <p>On fait chauffer de l’eau dans un bécher jusqu’à une température plus élevée que celle du milieu ambiant. Ensuite on immerge partiellement une face du module Seebeck dans l’eau pour faire chauffer l’une de ses deux faces. On utilise le dissipateur
+            thermique pour refroidir l’autre face du Seebeck. De cette différence de température naît ainsi un courant électrique. Nous établissons alors un tableau qui, à toute différence de température &Delta;T, associe la tension U spécifiée en circuit
+            ouvert. Nous pouvons alors tracer un graphique de ces résultats. Il en résulte une droite passant par l’origine, dont nous pouvons calculer le coefficient directeur appelé coefficient Seebeck. Par la suite, nous pouvons brancher le module
+            en série avec une résistance de 10Ω, et grâce à la relation U=RxI , en déduire l’intensité parcourant le circuit.
+        </p>
+
+        <h4>Montage :</h4>
+        <p>
+            <img height="400px" src="data/seebeck/seebeck.jpg" />
+            <img height="400px" src="data/seebeck/mesureseebeck.jpg" /></p>
+
+        <h4>Résultats :</h4>
+        <table border="1">
+            <tr>
+                <th>&Delta;t (en K)</th>
+                <th>U (en V)</th>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>0,21</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>0,24</td>
+                </tr>
+                <tr>
+                    <td>14,2</td>
+                    <td>0,43</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>0,55</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>0,75</td>
+                </tr>
+                <tr>
+                    <td>27,2</td>
+                    <td>0,84</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>0,82</td>
+                </tr>
+        </table>
+        <p><img src="graph/seebeck/dtu.png" /></p>
+
+        <hr/>
+
+        <h3>Expérience 2</h3>
+
+        <p>Nous allons chercher à calculer la résistance interne du module à effet Seebeck, cela nous aidera à trouver une fonction qui à toute tension U en Volt associe une intensité I en Ampère.</p>
+
+        <h4>Protocole Expérimental :</h4>
+
+        <p>Nous refaisons le montage précédent en ajoutant un ampèremètre en série dans le circuit ainsi qu’une résistance de 10Ω. Nous allons calculer la résistance interne du module à effet Seebeck, ce qui nous permettra de trouver une fonction qui à toute
+            tension U associe une intensité I. Nous utiliserons la relation U = R x I. Résultats : On sait que R=10+X où X représente la résistance interne du module à effet Seebeck et 10 la résistance déjà présente dans le circuit. De plus, nous pouvons
+            mesurer l’intensité avec l’ampèremètre et la tension avec le voltmètre. On en déduit les relations suivantes : I = U/R ⇔ I = U/(10+X) ⇔ X=U/I-10 Ensuite, nous relevons la tension aux bornes du module et l’intensité du courant dans le circuit,
+            on trouve : I = 0,019A et U= 0,36V On en déduit la résistance interne du module à effet Seebeck qui est donc de 8.37Ω. La résistance totale du circuit est donc de 10+8.37 soit 18.37Ω. Comme I=U/R, et que R est constant, nous avons trouvé la
+            fonction qui à toute tension mesurée au bornes du module à effet Seebeck associe une intensité électrique. Il s'agit de la fonction f(U) = U/18.37<br/> On en déduit alors la fonction qui à tout I et U associe P : f(I,U) = IxU = (1/18.37)xUxU
+            = U
+            <sup>2</sup>/18.37</p>
+
+        <p><img src="graph/seebeck/pu.png" /></p>
 
 
 
-<p>
-    De plus, on a U = 0.0305&Delta;T, donc on en déduit f(&Delta;T) = 18.37(0.0305&Delta;T)<sup>2</sup>.
-</p>
+        <p>
+            De plus, on a U = 0.0305&Delta;T, donc on en déduit f(&Delta;T) = 18.37(0.0305&Delta;T)<sup>2</sup>.
+        </p>
 
-<p><img src="graph/seebeck/pdt.png" /></p>
+        <p><img src="graph/seebeck/pdt.png" /></p>
 
-<h3>Applications :</h3>
+        <h3>Applications :</h3>
 
-<h4>Thermostat :</h4>
+        <h4>Thermostat :</h4>
 
-<p></p>
+        <p></p>
+
+    </section>
+    <hr/>
+    <footer>
+        <p>
+            Bilal Molli - Barthélémy Paléologue - Malo Le Reste<br/> 1<sup>è</sup>Se, Loquidy<br/>
+        </p>
+    </footer>
+    <div id="tothetop"><img src="tothetop.png" title="Vers le haut de la page" /></div>
+</body>
+<script src="script.js"></script>
+
+</html>
