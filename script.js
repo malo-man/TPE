@@ -5,7 +5,7 @@ var c = "click";
 const LACONSTANTEAVECLENOMLEPLUSLONGDUMONDEETQUISERTARIEN = undefined;
 
 var Nimage = 1;
-var iMax = 8;
+var iMax = 9;
 
 function img() {
     $("#image").attr("src", "diapo/img" + Nimage + ".JPG");
