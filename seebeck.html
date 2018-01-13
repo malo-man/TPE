@@ -74,7 +74,7 @@
         <p>On fait chauffer de l’eau dans un bécher jusqu’à une température plus élevée que celle du milieu ambiant. Ensuite on immerge partiellement une face du module Seebeck dans l’eau pour faire chauffer l’une de ses deux faces. On utilise le dissipateur
             thermique pour refroidir l’autre face du Seebeck. De cette différence de température naît ainsi un courant électrique. Nous établissons alors un tableau qui, à toute différence de température &Delta;T, associe la tension U spécifiée en circuit
             ouvert. Nous pouvons alors tracer un graphique de ces résultats. Il en résulte une droite passant par l’origine, dont nous pouvons calculer le coefficient directeur appelé coefficient Seebeck. Par la suite, nous pouvons brancher le module
-            en série avec une résistance de 10Ω, et grâce à la relation U=RxI , en déduire l’intensité parcourant le circuit.
+            en série avec une résistance de 10Ω, et grâce à la relation \(U=R \times I\) , en déduire l’intensité parcourant le circuit.
         </p>
 
         <h4>Montage :</h4>
@@ -131,12 +131,12 @@
         <h4>Protocole Expérimental :</h4>
 
         <p>Nous refaisons le montage précédent en ajoutant un ampèremètre en série dans le circuit ainsi qu’une résistance de 10Ω. Nous allons calculer la résistance interne du module à effet Seebeck, ce qui nous permettra de trouver une fonction qui à toute
-            tension U associe une intensité I. Nous utiliserons la relation \(U = R * I\). Résultats : On sait que \(R=10+x\) où \(x\) représente la résistance interne du module à effet Seebeck et 10 la résistance déjà présente dans le circuit. De plus,
-            nous pouvons mesurer l’intensité avec l’ampèremètre et la tension avec le voltmètre. On en déduit les relations suivantes : $$I = {U \over R} \Leftrightarrow I = {U \over 10+x} \Leftrightarrow x = {U \over I-10}$$ Ensuite, nous relevons la
-            tension aux bornes du module et l’intensité du courant dans le circuit, on trouve : \(I = 0,019A\) et \(U= 0,36V\) On en déduit la résistance interne du module à effet Seebeck qui est donc de 8.37Ω. La résistance totale du circuit est donc
+            tension U associe une intensité I. Nous utiliserons la relation \(U = R \times I\). Résultats : On sait que \(R=10+x\) où \(x\) représente la résistance interne du module à effet Seebeck et 10 la résistance déjà présente dans le circuit. De
+            plus, nous pouvons mesurer l’intensité avec l’ampèremètre et la tension avec le voltmètre. On en déduit les relations suivantes : $$I = {U \over R} \Leftrightarrow I = {U \over 10+x} \Leftrightarrow x = {U \over I-10}$$ Ensuite, nous relevons
+            la tension aux bornes du module et l’intensité du courant dans le circuit, on trouve : \(I = 0,019A\) et \(U= 0,36V\) On en déduit la résistance interne du module à effet Seebeck qui est donc de 8.37Ω. La résistance totale du circuit est donc
             de 10+8.37 soit 18.37Ω. Comme \(I={U \over R}\), et que R est constant, nous avons trouvé la fonction qui à toute tension mesurée au bornes du module à effet Seebeck associe une intensité électrique. Il s'agit de la fonction \(f(U) = {U \over
             18.37}\)
-            <br/> On en déduit alors la fonction qui à tout I et U associe P : \(f(I,U) = I * U = {1 \over 18.37}*U*U = {U^2 \over 18.37}\)</p>
+            <br/> On en déduit alors la fonction qui à tout I et U associe P : \(f(I,U) = I \times U = {1 \over 18.37}\times U\times U = {U^2 \over 18.37}\)</p>
 
         <p><img src="graph/seebeck/pu.png" /></p>
 
