@@ -53,7 +53,10 @@ $("nav a").on("click", function(e) {
     }
 });*/
 
-$("#toggleDiapo").trigger("click");
+
+$("#diapo, #c").slideToggle(1);
+$("#next,#prev").fadeToggle(1);
+
 $("a[href='presentation.html']").trigger("click");
 
 $("#nav>ul>li").hover(function(e) {
