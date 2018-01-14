@@ -1,11 +1,11 @@
-/// <reference path="jquery.d.ts" />
+/// <reference path="../jquery.d.ts" />
 
 var c = "click";
 // NANI !? OMAEWA MOU SHINDE IRU !!!
 const LACONSTANTEAVECLENOMLEPLUSLONGDUMONDEETQUISERTARIEN = undefined;
 
 var Nimage = 1;
-var iMax = 9;
+var iMax = 12;
 
 function img() {
     $("#image").attr("src", "diapo/img" + Nimage + ".JPG");
