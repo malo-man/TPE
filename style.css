@@ -257,6 +257,16 @@ section p {
     line-height: 1.5em;
 }
 
+.prestext {
+    float: left;
+    width: 72%;
+}
+
+.presimg {
+    float: right;
+    width: 20%;
+}
+
 footer {
     font-family: sans-serif;
     padding: 10px;
