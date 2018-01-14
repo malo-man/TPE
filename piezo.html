@@ -1,4 +1,5 @@
-L'effet Seebeck<!DOCTYPE HTML>
+L'effet Seebeck
+<!DOCTYPE HTML>
 
 <html lang="fr">
 
@@ -61,8 +62,8 @@ L'effet Seebeck<!DOCTYPE HTML>
         <h4>Application à la marche des êtres humains</h4>
 
         <h4>Protocole :</h4>
-        <p>Nous allons "scotcher" une cellule piezoélectrique en dessous de la semelle de Bilal et mesurer le voltage produit par une marche de 10 secondes. Nous allons donc utiliser le logiciel Latis Pro afin de mesurer le voltage et de tracer des graphiques.
-            De plus nous allons déterminer quelle est la zone du pied la plus intéressante pour placer la cellule.
+        <p>Nous allons "scotcher" une cellule piezoélectrique en dessous de la semelle de Bilal et mesurer le voltage produit par une marche de 10 secondes. Nous allons donc utiliser le logiciel Latis Pro afin de mesurer la tension et de tracer des graphiques
+            représentant le profil de marche. De plus nous allons déterminer quelle est la zone du pied la plus intéressante pour placer la cellule afin de mesurer plus facilement l'intensité dans un second temps.
         </p>
 
         <h4>Matériel :</h4>
@@ -77,24 +78,28 @@ L'effet Seebeck<!DOCTYPE HTML>
 
         <p id="pr">Voici le graphique de la tension en fonction du temps lorsque Bilal marche avec la cellule collée sous l'avant de sa chaussure :<br/>
             <video src="data/piezo/videos/avant1.mp4" controls muted></video>
-            <img src="graph/piezo/voltmarche2_devant.JPG" /><br/> On peut observer que l'on atteint tout juste 1V au maximum à chaque pas.
+            <img src="graph/piezo/voltmarche2_devant.JPG" /><br/> On peut observer que l'on atteint tout juste 1V au maximum à chaque pas. Nous allons voir, si nous pouvons obtenir de meilleurs résultats au milieu de la chaussure.
             <br/> Voici le graphique de la tension en fonction du temps lorsque Bilal marche avec la cellule collée sous le milieu de sa chaussure :<br/>
             <video src="data/piezo/videos/milieu1.mp4" controls muted></video>
-            <img src="graph/piezo/voltmarche1_milieu.JPG" /><br/>Cette fois-ci, on atteint 3V au maximum à chaque pas, le milieu du pied est donc bien plus aproprié afin de placer une cellule. <br/> Sous le talon :<br/>
+            <img src="graph/piezo/voltmarche1_milieu.JPG" /><br/>Cette fois-ci, on atteint 3V au maximum à chaque pas, le milieu du pied est donc bien plus aproprié afin de placer une cellule. Nous allons maintenant voir si nous obtenons des résultats
+            encore meilleurs sous le talon. <br/> Voici le graphique de la tension en fonction du temps lorsque Bilal marche avec la cellule collée sous le talon de sa chaussure :<br/>
             <video src="data/piezo/videos/arriere1.mp4" controls muted></video>
-            <img src="graph/piezo/voltmarche3_arriere.JPG" /><br/>Sous le talon, le voltage est légèrement plus faible, on atteint 2V à chaque pas.<br/> Ensuite, nous avons décidé de tester une cellule dans la chaussure :<br/>
-            <img src="graph/piezo/voltmarche4_interne.JPG" id="lastpict" /><br/>Le résultat est très décevant, on atteint à peine 1V</p>
+            <img src="graph/piezo/voltmarche3_arriere.JPG" /><br/>Sous le talon, le voltage est légèrement plus faible, on atteint 2V à chaque pas.<br/> Ensuite, nous avons décidé de tester une cellule installée à l'intérieur au milieu de la chaussure
+            :
+            <br/>
+            <img src="graph/piezo/voltmarche4_interne.JPG" id="lastpict" /><br/>Le résultat est très décevant, on atteint à peine 1V. Il n'est donc pas nécessaire de tester aux autres endroits de la chaussure.</p>
 
         <h4>Conclusion :</h4>
 
-        <p>Nous pouvons conclure alors que la piezo électricité permet de produire un voltage plutôt élevé, nous allons donc continuer les expériences afin de mesurer l'intensité quand la cellule est placée au milieu du pied. Grâce à ces résultats, nous
-            pourrons calculer la puissance générée par la cellule piézo-électrique</p>
+        <p>Nous pouvons conclure alors que la piezo électricité permet de produire un voltage plutôt élevé, nous allons donc continuer les expériences afin de mesurer l'intensité quand la cellule est placée au milieu du pied pour obtenir les meilleurs résultats
+            possibles. Grâce à ces résultats, nous pourrons calculer la puissance générée par la cellule piézo-électrique.</p>
         <hr/>
         <h3>Expérience 2</h3>
 
         <h4>Protocole :</h4>
 
-        <p>Nous allons brancher la cellule piezo-électrique en série avec une résistance de 10&Omega; (c'est le plus petit que nous avons) et en dérivation avec la centrale Latis. Nous allons donc mesurer un voltage et nous pourrons en déduire une intensité.</p>
+        <p>Nous allons brancher la cellule piezo-électrique en série avec une résistance de 10&Omega; (c'est le plus petit que nous avons) et en dérivation avec la centrale Latis. Nous allons donc mesurer un voltage et nous pourrons en déduire une intensité.
+            Nous installerons la cellule sous le milieu de la chaussure de Bilal, qui marchera pendant 10 secondes.</p>
 
         <h4>Matériel :</h4>
 
@@ -107,8 +112,9 @@ L'effet Seebeck<!DOCTYPE HTML>
 
         <h4>Comment l'expérience à échouée</h4>
 
-        <p>Après avoir fait le montage, Bilal a commencé à marcher pour faire l'expérience mais la centrale Latis restait déséspéremment à 0. Il s'avère que l'intensité est si faible que même avec une petite résistance de 10&Omega;, elle ne soit pas calculable
-            à partir de la tension. Nous allons donc chercher une formule qui nous permettra de calculer une intensité.</p>
+        <p>Après avoir fait le montage, Bilal a commencé à marcher pour faire l'expérience mais la centrale Latis restait déséspéremment à 0V. Il s'avère que l'intensité est si faible que même avec une petite résistance de 10&Omega;, elle ne soit pas calculable
+            avec à partir de la tension (\(U=R\times I\)). Nous allons donc chercher une formule qui nous permettra de calculer une intensité, ou bien une autre grandeur qui nous permettra de juger de l'efficacité d'une cellule piezoélectrique afin d'alimenter
+            un objet connecté.</p>
         <hr/>
         <h3>Expérience 3</h3>
 
@@ -119,27 +125,30 @@ L'effet Seebeck<!DOCTYPE HTML>
 
         <h4>Protocole Mathématique et Expérimental :</h4>
 
-        <p>Nous allons prendre un poids de référence que nous exprimerons en N. Ce poid sera appliqué à la surface de la cellule, ce qui nous donnera la pression. La cellule étant en quartz, nous connaissons \(d_{33}\)</sub>. La charge électrique sera donc
-            proportionnelle au poids car la surface et le coefficient sont constants.</p>
+        <p>Nous allons prendre un poids de référence que nous exprimerons en Newton. Ce poid sera appliqué à la surface de la cellule, appelée ici surface de référence, ce qui nous donnera la pression de référence. La cellule étant en quartz, nous connaissons
+            \(d_{33}\)
+            </sub>. La charge électrique sera donc proportionnelle au poids car la surface et le coefficient sont constants.</p>
 
         <h4>Calculs</h4>
 
-        <p>On a F la pression appliquée par Bilal à chaque pas (on suppose qu'il applique la moitié de son poid) sur la surface de la cellule, d33 le coefficient piezoélectrique qui dépend du matériau de la cellule (ici du quartz) et Q la charge électrique générée par la contrainte
-            mécanique.
-            <br/> Or comme nous l'ont appris les documents scientifiques (allez voir la bibliographie pour plus d'informations) :<br/> \(Q = d_{33} \times F\)<br/> On sait que \(F = {196.2N \over 2.8\times 10^{-15}m^2}\) et \(d_{33} = 2.33\times 10^{-12}\)<br/>            Par conséquent, dans le cas de Bilal, la charge en Coulombs générée par Bilal à chaque pas est de \(1.456\times 10^{-6}C\)<br/> Or \(1C = 1000mAs\) donc Bilal génère \(1.456\times 10^{-3}mAs\) ce qui nous fait donc à peu près \(5mAh\).<br/>            Ce résultat est absolument insignifiant, rendant l'utilisation de la piezo-électricité pour alimenter des objets connectés totalement inefficace.</p>
+        <p>On a F la pression appliquée par Bilal à chaque pas (on suppose qu'il applique la moitié de son poid) sur la surface de la cellule, \(d_{33}\) le coefficient piezoélectrique qui dépend du matériau de la cellule (ici du quartz) et Q la charge électrique
+            générée par la contrainte mécanique des pas de Bilal.
+            <br/> Or comme nous l'ont appris les documents scientifiques (allez voir la bibliographie pour plus d'informations) :<br/> \(Q = d_{33} \times F\)<br/> On sait que \(F = {196.2N \over 2.8\times 10^{-15}m^2}\) et \(d_{33} = 2.33\times 10^{-12}\)<br/>            Par conséquent, dans le cas de Bilal, la charge en Coulombs générée par Bilal à chaque pas est de \(1.456\times 10^{-6}C\)<br/> Or \(1C = 1000mAs\) donc Bilal génère \(1.456\times 10^{-3}mAs\) ce qui nous fait donc à peu près \(5mAh\).<br/>            Ce résultat est absolument insignifiant (pour rappel une batterie de téléphone se situe à 3500mAh), rendant l'utilisation de la piezo-électricité pour alimenter des objets connectés totalement inefficace, à petite échelle du moins.</p>
 
         <h3>Conclusion sur la piezoélectricité :</h3>
 
-        <p>Nous avons vu grâce à nos expériences que l'on peut en effet produire de l'énergie grâce à des cellules piézoélectriques. Cependant, la cellule testée est trop peu efficace afin d'être utilisée dans le cadre d'un usage personnel (marche). Sauf s'il est possible d'utiliser des cellules piézoélectriques avec un meilleur rendement (autres matériaux, autres dimensions...). Nous pouvons aussi
-            envisager l'utilisation de condensateurs afin d'accumuler de l'énergie pour alimenter de manière ponctuelle un objet connecté.<br/> Pour aller plus loin, nous pourrions imaginer d'autres conditions d'utilisations : par exemple des routes ou même un sol très fréquenté bardé de cellules piézoélectriques.
-            La contrainte mécanique d'une foule ou de plusieurs voitures serait peut-être suffisante afin d'alimenter des objets connectés.</p>
+        <p>Nous avons vu grâce à nos expériences que l'on peut en effet produire de l'énergie grâce à des cellules piézoélectriques. Cependant, la cellule testée est trop peu efficace afin d'être utilisée dans le cadre d'un usage personnel (marche). Nous
+            pouvons cependant aussi envisager l'utilisation de condensateurs afin d'accumuler de l'énergie pour alimenter de manière ponctuelle un objet connecté.<br/> Pour aller plus loin, nous pourrions imaginer d'autres conditions d'utilisations :
+            par exemple des routes ou même un sol très fréquenté bardé de cellules piézoélectriques. La contrainte mécanique d'une foule ou de plusieurs voitures serait peut-être suffisante afin d'alimenter des objets connectés situés à proximité</p>
 
 
-        <h3>Applications :</h3>
+        <!--<h3>Applications :</h3>
 
         <h4>Plaque terrestre</h4>
 
-        <p>Le principe est de placer une plaque possédant plein de cellules piézoélectriques en dessous afin de produire de l'énergie lorsque quelqu'un marche dessus. Pour maximiser son rendement, il faudrait la placer dans un passage très fréquenté. Ces plaques pourraient peut-être être utilisées par la ville pour alimenter quelques services. Cela pourrait aussi servir à une entreprise (assez grande) ou même à un établissement, du moment qu'un passage est suffisamment fréquenté pour que la plaque produise une quantité d'électricité suffisante.</p>
+        <p>Le principe est de placer une plaque possédant plein de cellules piézoélectriques en dessous afin de produire de l'énergie lorsque quelqu'un marche dessus. Pour maximiser son rendement, il faudrait la placer dans un passage très fréquenté. Ces
+            plaques pourraient peut-être être utilisées par la ville pour alimenter quelques services. Cela pourrait aussi servir à une entreprise (assez grande) ou même à un établissement, du moment qu'un passage est suffisamment fréquenté pour que la
+            plaque produise une quantité d'électricité suffisante.</p>-->
 
     </section>
     <hr/>
